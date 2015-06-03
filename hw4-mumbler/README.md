@@ -6,8 +6,11 @@
 
 ## Instructions to Run
 Login to the cluster
+
 user: xxxx
+
 password: xxxxxxxx
+
 host: 127.0.0.1
 
 There are two scripts
@@ -18,7 +21,9 @@ There are two scripts
       cd /gpfs/gpfsfpo/scripts
       nohup /gpfs/gpfsfpo/scripts/main.wrapper.sh &
 
-2. To run mumbler, 
+2. Mumbler accepts starting word and nax words as parameter
+    
+    To run mumbler
       cd /gpfs/gpfsfpo/scripts
       ./mumbler.sh WORD COUNT
       
