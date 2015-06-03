@@ -14,6 +14,7 @@ password: xxxxxxxx
 host: 127.0.0.1
 
 There are two scripts
+
 1. Pre-processing script that includes downloading files and pre-processing files for mumbler to run quicker.
 
    Currently, I have the download functionality disabled.
