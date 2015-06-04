@@ -24,7 +24,7 @@ echo "Mumblr thinking..."
 
 while [ $iteration -gt 0 ]
 do
-    file=`echo $current_seed | cut -c1`.txt
+    file=`echo $current_seed | cut -c1-3`.txt
     [ ! -f "$mumblr_dir/$file" ] && { echo "$mumblr_dir/$file does not exists"; break; }
     next_seed=`awk -v search="$current_seed" -F" " '$1==search { a[count] = $2; count++; } END { srand();print a[int(rand()*(count-1))+1] }' $mumblr_dir/$file`
     [ -z "$next_seed" ] && break
@@ -33,7 +33,9 @@ do
     iteration=`expr $iteration - 1`
 done
 
-echo -en "Mumblr shouts\n$output"
+echo -en "Mumblr mumbles\n\n$output"
 
 ENDTIME=$(date +%s)
-echo -e "\n\nElapsed Time: $(($ENDTIME - $STARTTIME)) seconds"
+ELAPSED=$(echo "scale=3; ($ENDTIME - $STARTTIME)/1000" | bc)
+
+echo -e "\n\nElapsed Time: $ELAPSED seconds"

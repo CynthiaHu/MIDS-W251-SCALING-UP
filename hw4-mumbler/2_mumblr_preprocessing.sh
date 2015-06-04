@@ -93,7 +93,7 @@ awk 'FNR==NR{a[$1]+=$3;next}; {print $0, a[$1]}' ${out_dir}/file_counts.txt{,} >
 # ignoring numbers and special characters
 echo "[`hostname`] [`date`] splitting bi-gram frequency file based on starting alphabet of first word (ignoring numbers and special characters)"
 cd ${mumblr_dir}
-awk 'substr($1,1,1) ~ "^[a-zA-Z]$" && substr($2,1,1) ~ "^[a-zA-Z]$" { print tolower($0) > tolower(substr($1,1,1))".txt" }' ${out_dir}/bigram.pre-processed.txt
+awk 'substr($1,1,1) ~ "^[a-zA-Z0-9!:,;_]$" && substr($2,1,1) ~ "^[a-zA-Z0-9!:,;_]$" { print tolower($0) > tolower(substr($1,1,3))".txt" }' ${out_dir}/bigram.pre-processed.txt
 
 cd ${script_dir}
 
