@@ -33,12 +33,14 @@ top_n=10
 master_url="local[4]"
 ```
 
-Program can be launched using below
+Program can be launched using below command
 
 ```
 cd /root/hw9/scripts
 sbt package run
 ```
+
+NOTE: `spark-submit` complains about missing classes even though they are present.
 
 ## Implementation Approach
 
@@ -63,4 +65,5 @@ Output with popular topics, tweeted users and mentioned users with a sampling du
 
 ## References
 [Real Time Processing with Spark Streaming](http://ampcamp.berkeley.edu/3/exercises/realtime-processing-with-spark-streaming.html)
+
 [Advance Analytics with Spark](https://www.safaribooksonline.com/library/view/advanced-analytics-with/9781491912751/ch02.html#DataCleansingAggregate)
