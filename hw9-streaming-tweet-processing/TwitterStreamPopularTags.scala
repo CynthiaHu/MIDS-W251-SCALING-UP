@@ -49,23 +49,23 @@ object TwitterStreamPopularTags {
         val stream = TwitterUtils.createStream(ssc, None)    
 
         // custom class to access tweet elements
-        case class TweetStreamData(topic: String, uAuthors:Array[String], uMentioned:Array[String])
+        case class TweetStreamData(topic: String, uAuthors:String, uMentioned:Array[String])
 
         // monster to get unique hashtags with tweet user authors and twitter user mentioned
         val tweets = stream.map(
             tweetStatus => {
                 val topic       = tweetStatus.getText().split(" ").filter(_.startsWith("#"))
-                val u_author    = tweetStatus.getUser
-                val uMentioned = tweetStatus.getText.split(" ").filter(_.startsWith("@"))
-                (topic, uMentioned, Array(u_author.getScreenName()))
+                val u_author    = tweetStatus.getUser.getScreenName()
+                val uMentioned  = tweetStatus.getUserMentionEntities().map(_.getScreenName).toArray
+                (topic, uMentioned, u_author)
             }).flatMap{ case (topic, uMentioned, uAuthors) => topic.map( topic => TweetStreamData(topic, uAuthors, uMentioned) )}
 
         // count topics aggregated by the tweeted users and the users mentioned
         // sort by topic counts and pick top N
         tweets.window(Seconds(slidingWindow)).foreachRDD(rdd => {
             val topList = rdd
-                              .map{case (tweet) => (tweet.topic, (1, tweet.uAuthors.toSet, tweet.uMentioned.toSet))}
-                              .foldByKey(0, Set(), Set())((x, y) => (x._1 + y._1, x._2 ++ y._2, x._3 ++ y._3))
+                              .map{case (tweet) => (tweet.topic, (1, Set(tweet.uAuthors), tweet.uMentioned))}
+                              .reduceByKey((x, y) => (x._1 + y._1, x._2 ++ y._2, x._3 ++ y._3))
                               .sortBy({case (_, (count, _, _)) => count}, ascending = false)
                               .take(topN)
 
@@ -91,6 +91,7 @@ object TwitterStreamPopularTags {
         println("starting spark streaming application to stream tweets")
         // wait for user input to terminate spark streaming application
         ssc.awaitTermination()
+        ssc.stop(stopSparkContext = true, stopGracefully = true)
 
         }
     }

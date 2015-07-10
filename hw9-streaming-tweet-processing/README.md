@@ -37,10 +37,8 @@ Program can be launched using below command
 
 ```
 cd /root/hw9/scripts
-sbt package run
+$SPARK_HOME/bin/spark-submit --class "edu.berkeley.ds.w251.streaming.twitter.TwitterStreamPopularTags" "/root/hw9/scripts/target/scala-2.10/twitterstreampopulartags-project_2.10-1.0.jar"
 ```
-
-NOTE: `spark-submit` complains about missing classes even though they are present.
 
 ## Implementation Approach
 
@@ -49,15 +47,18 @@ NOTE: `spark-submit` complains about missing classes even though they are presen
 2. Tweet stream is flat mapped into a custom class `TweetStreamData(topic, uAuthors, uMentioned)`
 
     - *topic*: hashtag filtered starting with '#'
-    - *uAuthors*: array of screen name of the users who tweeted
+    - *uAuthors*: screen name of the user who tweeted
     - *uMentions*: array of screen name of the users who were mentioned by the tweet users
 
-3. For the analysis, topics were accumulated and aggregated with associated tweet users and mentions using `foldByKey` operation over a sliding window of 30min (*configurable*). 
+3. For the analysis, topics were accumulated and aggregated with associated tweet users and mentions using `reduceByKey` operation over a sliding window of 30min (*configurable*). 
 
 4. Top 10 topics are taken after sorting the results from foldByKey over a window. The resultant are directed to the output with the list of tweet users and mentions.  
 
 ## Results
 Output with popular topics, tweeted users and mentioned users with a sampling duration of 30s and a sliding window of 30min is available [here](results_30min.out).
+Here is an interesting graph showing popular topics during the total run time of the script for about 30min (55 batches)
+
+![results](results.png)
 
 ## Challenges Faced
 - Originally analysis was done with *reduceByKeyAndWindow* but this required multiple count tuples to be created and then joined
