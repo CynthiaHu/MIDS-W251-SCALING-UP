@@ -1,0 +1,729 @@
+15/08/06 03:27:27 INFO ADAMMain: ADAM invoked with args: "vcf2adam" "/root/genedata/all.y.vcf" "/root/genedata/all.y.adam"
+15/08/06 03:27:27 WARN SparkConf: The configuration key 'spark.kryoserializer.buffer.mb' has been deprecated as of Spark 1.4 and may be removed in the future. Please use spark.kryoserializer.buffer instead. The default value for spark.kryoserializer.buffer.mb was previously specified as '0.064'. Fractional values are no longer accepted. To specify the equivalent now, one may use '64k'.
+15/08/06 03:27:27 WARN SparkConf: The configuration key 'spark.kryoserializer.buffer.mb' has been deprecated as of Spark 1.4 and and may be removed in the future. Please use the new key 'spark.kryoserializer.buffer' instead.
+15/08/06 03:27:27 INFO SparkContext: Running Spark version 1.4.1
+15/08/06 03:27:28 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+15/08/06 03:27:28 WARN SparkConf: The configuration key 'spark.kryoserializer.buffer.mb' has been deprecated as of Spark 1.4 and may be removed in the future. Please use spark.kryoserializer.buffer instead. The default value for spark.kryoserializer.buffer.mb was previously specified as '0.064'. Fractional values are no longer accepted. To specify the equivalent now, one may use '64k'.
+15/08/06 03:27:28 WARN SparkConf: The configuration key 'spark.kryoserializer.buffer.mb' has been deprecated as of Spark 1.4 and and may be removed in the future. Please use the new key 'spark.kryoserializer.buffer' instead.
+15/08/06 03:27:28 INFO SecurityManager: Changing view acls to: root
+15/08/06 03:27:28 INFO SecurityManager: Changing modify acls to: root
+15/08/06 03:27:28 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: Set(root); users with modify permissions: Set(root)
+15/08/06 03:27:29 INFO Slf4jLogger: Slf4jLogger started
+15/08/06 03:27:29 INFO Remoting: Starting remoting
+15/08/06 03:27:29 INFO Utils: Successfully started service 'sparkDriver' on port 57732.
+15/08/06 03:27:29 INFO Remoting: Remoting started; listening on addresses :[akka.tcp://sparkDriver@10.55.119.69:57732]
+15/08/06 03:27:29 INFO SparkEnv: Registering MapOutputTracker
+15/08/06 03:27:29 WARN SparkConf: The configuration key 'spark.kryoserializer.buffer.mb' has been deprecated as of Spark 1.4 and may be removed in the future. Please use spark.kryoserializer.buffer instead. The default value for spark.kryoserializer.buffer.mb was previously specified as '0.064'. Fractional values are no longer accepted. To specify the equivalent now, one may use '64k'.
+15/08/06 03:27:29 WARN SparkConf: The configuration key 'spark.kryoserializer.buffer.mb' has been deprecated as of Spark 1.4 and and may be removed in the future. Please use the new key 'spark.kryoserializer.buffer' instead.
+15/08/06 03:27:29 WARN SparkConf: The configuration key 'spark.kryoserializer.buffer.mb' has been deprecated as of Spark 1.4 and may be removed in the future. Please use spark.kryoserializer.buffer instead. The default value for spark.kryoserializer.buffer.mb was previously specified as '0.064'. Fractional values are no longer accepted. To specify the equivalent now, one may use '64k'.
+15/08/06 03:27:29 WARN SparkConf: The configuration key 'spark.kryoserializer.buffer.mb' has been deprecated as of Spark 1.4 and and may be removed in the future. Please use the new key 'spark.kryoserializer.buffer' instead.
+15/08/06 03:27:29 INFO SparkEnv: Registering BlockManagerMaster
+15/08/06 03:27:29 INFO DiskBlockManager: Created local directory at /tmp/spark-3a5deff5-10d9-47cd-9b10-8f24264c79d5/blockmgr-3856bfc7-3895-49ff-9993-bdc29d700d06
+15/08/06 03:27:29 INFO MemoryStore: MemoryStore started with capacity 2.1 GB
+15/08/06 03:27:29 WARN SparkConf: The configuration key 'spark.kryoserializer.buffer.mb' has been deprecated as of Spark 1.4 and may be removed in the future. Please use spark.kryoserializer.buffer instead. The default value for spark.kryoserializer.buffer.mb was previously specified as '0.064'. Fractional values are no longer accepted. To specify the equivalent now, one may use '64k'.
+15/08/06 03:27:29 WARN SparkConf: The configuration key 'spark.kryoserializer.buffer.mb' has been deprecated as of Spark 1.4 and and may be removed in the future. Please use the new key 'spark.kryoserializer.buffer' instead.
+15/08/06 03:27:29 INFO HttpFileServer: HTTP File server directory is /tmp/spark-3a5deff5-10d9-47cd-9b10-8f24264c79d5/httpd-10a46199-50f7-4ac6-bc80-9528da197de9
+15/08/06 03:27:29 INFO HttpServer: Starting HTTP Server
+15/08/06 03:27:30 INFO Server: jetty-8.y.z-SNAPSHOT
+15/08/06 03:27:30 INFO AbstractConnector: Started SocketConnector@0.0.0.0:52960
+15/08/06 03:27:30 INFO Utils: Successfully started service 'HTTP file server' on port 52960.
+15/08/06 03:27:30 INFO SparkEnv: Registering OutputCommitCoordinator
+15/08/06 03:27:30 INFO Server: jetty-8.y.z-SNAPSHOT
+15/08/06 03:27:30 INFO AbstractConnector: Started SelectChannelConnector@0.0.0.0:4040
+15/08/06 03:27:30 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+15/08/06 03:27:30 INFO SparkUI: Started SparkUI at http://10.55.119.69:4040
+15/08/06 03:27:30 INFO SparkContext: Added JAR file:/root/adam/adam-cli/target/appassembler/repo/commons-cli/commons-cli/1.2/commons-cli-1.2.jar at http://10.55.119.69:52960/jars/commons-cli-1.2.jar with timestamp 1438849650227
+15/08/06 03:27:30 INFO SparkContext: Added JAR file:/root/adam/adam-cli/target/appassembler/repo/commons-httpclient/commons-httpclient/3.1/commons-httpclient-3.1.jar at http://10.55.119.69:52960/jars/commons-httpclient-3.1.jar with timestamp 1438849650229
+15/08/06 03:27:30 INFO SparkContext: Added JAR file:/root/adam/adam-cli/target/appassembler/repo/commons-codec/commons-codec/1.4/commons-codec-1.4.jar at http://10.55.119.69:52960/jars/commons-codec-1.4.jar with timestamp 1438849650229
+15/08/06 03:27:30 INFO SparkContext: Added JAR file:/root/adam/adam-cli/target/appassembler/repo/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar at http://10.55.119.69:52960/jars/commons-logging-1.1.1.jar with timestamp 1438849650230
+15/08/06 03:27:30 INFO SparkContext: Added JAR file:/root/adam/adam-cli/target/appassembler/repo/org/apache/commons/commons-compress/1.4.1/commons-compress-1.4.1.jar at http://10.55.119.69:52960/jars/commons-compress-1.4.1.jar with timestamp 1438849650231
+15/08/06 03:27:30 INFO SparkContext: Added JAR file:/root/adam/adam-cli/target/appassembler/repo/org/slf4j/slf4j-api/1.7.5/slf4j-api-1.7.5.jar at http://10.55.119.69:52960/jars/slf4j-api-1.7.5.jar with timestamp 1438849650231
+15/08/06 03:27:30 INFO SparkContext: Added JAR file:/root/adam/adam-cli/target/appassembler/repo/log4j/log4j/1.2.17/log4j-1.2.17.jar at http://10.55.119.69:52960/jars/log4j-1.2.17.jar with timestamp 1438849650234
+15/08/06 03:27:30 INFO SparkContext: Added JAR file:/root/adam/adam-cli/target/appassembler/repo/org/xerial/snappy/snappy-java/1.1.1.6/snappy-java-1.1.1.6.jar at http://10.55.119.69:52960/jars/snappy-java-1.1.1.6.jar with timestamp 1438849650236
+15/08/06 03:27:30 INFO SparkContext: Added JAR file:/root/adam/adam-cli/target/appassembler/repo/org/bdgenomics/utils/utils-io_2.10/0.2.2/utils-io_2.10-0.2.2.jar at http://10.55.119.69:52960/jars/utils-io_2.10-0.2.2.jar with timestamp 1438849650236
+15/08/06 03:27:30 INFO SparkContext: Added JAR file:/root/adam/adam-cli/target/appassembler/repo/org/bdgenomics/utils/utils-misc_2.10/0.2.2/utils-misc_2.10-0.2.2.jar at http://10.55.119.69:52960/jars/utils-misc_2.10-0.2.2.jar with timestamp 1438849650237
+15/08/06 03:27:30 INFO SparkContext: Added JAR file:/root/adam/adam-cli/target/appassembler/repo/org/apache/httpcomponents/httpclient/4.3.2/httpclient-4.3.2.jar at http://10.55.119.69:52960/jars/httpclient-4.3.2.jar with timestamp 1438849650239
+15/08/06 03:27:30 INFO SparkContext: Added JAR file:/root/adam/adam-cli/target/appassembler/repo/org/apache/httpcomponents/httpcore/4.3.1/httpcore-4.3.1.jar at http://10.55.119.69:52960/jars/httpcore-4.3.1.jar with timestamp 1438849650240
+15/08/06 03:27:30 INFO SparkContext: Added JAR file:/root/adam/adam-cli/target/appassembler/repo/org/bdgenomics/utils/utils-cli_2.10/0.2.2/utils-cli_2.10-0.2.2.jar at http://10.55.119.69:52960/jars/utils-cli_2.10-0.2.2.jar with timestamp 1438849650240
+15/08/06 03:27:30 INFO SparkContext: Added JAR file:/root/adam/adam-cli/target/appassembler/repo/org/apache/parquet/parquet-avro/1.8.1/parquet-avro-1.8.1.jar at http://10.55.119.69:52960/jars/parquet-avro-1.8.1.jar with timestamp 1438849650241
+15/08/06 03:27:30 INFO SparkContext: Added JAR file:/root/adam/adam-cli/target/appassembler/repo/org/apache/parquet/parquet-column/1.8.1/parquet-column-1.8.1.jar at http://10.55.119.69:52960/jars/parquet-column-1.8.1.jar with timestamp 1438849650245
+15/08/06 03:27:30 INFO SparkContext: Added JAR file:/root/adam/adam-cli/target/appassembler/repo/org/apache/parquet/parquet-common/1.8.1/parquet-common-1.8.1.jar at http://10.55.119.69:52960/jars/parquet-common-1.8.1.jar with timestamp 1438849650245
+15/08/06 03:27:30 INFO SparkContext: Added JAR file:/root/adam/adam-cli/target/appassembler/repo/org/apache/parquet/parquet-encoding/1.8.1/parquet-encoding-1.8.1.jar at http://10.55.119.69:52960/jars/parquet-encoding-1.8.1.jar with timestamp 1438849650246
+15/08/06 03:27:30 INFO SparkContext: Added JAR file:/root/adam/adam-cli/target/appassembler/repo/org/apache/parquet/parquet-hadoop/1.8.1/parquet-hadoop-1.8.1.jar at http://10.55.119.69:52960/jars/parquet-hadoop-1.8.1.jar with timestamp 1438849650247
+15/08/06 03:27:30 INFO SparkContext: Added JAR file:/root/adam/adam-cli/target/appassembler/repo/org/apache/parquet/parquet-jackson/1.8.1/parquet-jackson-1.8.1.jar at http://10.55.119.69:52960/jars/parquet-jackson-1.8.1.jar with timestamp 1438849650251
+15/08/06 03:27:30 INFO SparkContext: Added JAR file:/root/adam/adam-cli/target/appassembler/repo/org/apache/parquet/parquet-format/2.3.0-incubating/parquet-format-2.3.0-incubating.jar at http://10.55.119.69:52960/jars/parquet-format-2.3.0-incubating.jar with timestamp 1438849650252
+15/08/06 03:27:30 INFO SparkContext: Added JAR file:/root/adam/adam-cli/target/appassembler/repo/org/bdgenomics/utils/utils-metrics_2.10/0.2.2/utils-metrics_2.10-0.2.2.jar at http://10.55.119.69:52960/jars/utils-metrics_2.10-0.2.2.jar with timestamp 1438849650254
+15/08/06 03:27:30 INFO SparkContext: Added JAR file:/root/adam/adam-cli/target/appassembler/repo/com/netflix/servo/servo-core/0.5.5/servo-core-0.5.5.jar at http://10.55.119.69:52960/jars/servo-core-0.5.5.jar with timestamp 1438849650260
+15/08/06 03:27:30 INFO SparkContext: Added JAR file:/root/adam/adam-cli/target/appassembler/repo/com/google/code/findbugs/annotations/2.0.0/annotations-2.0.0.jar at http://10.55.119.69:52960/jars/annotations-2.0.0.jar with timestamp 1438849650260
+15/08/06 03:27:30 INFO SparkContext: Added JAR file:/root/adam/adam-cli/target/appassembler/repo/org/scoverage/scalac-scoverage-plugin_2.10/0.99.2/scalac-scoverage-plugin_2.10-0.99.2.jar at http://10.55.119.69:52960/jars/scalac-scoverage-plugin_2.10-0.99.2.jar with timestamp 1438849650261
+15/08/06 03:27:30 INFO SparkContext: Added JAR file:/root/adam/adam-cli/target/appassembler/repo/commons-io/commons-io/1.3.2/commons-io-1.3.2.jar at http://10.55.119.69:52960/jars/commons-io-1.3.2.jar with timestamp 1438849650262
+15/08/06 03:27:30 INFO SparkContext: Added JAR file:/root/adam/adam-cli/target/appassembler/repo/org/bdgenomics/bdg-formats/bdg-formats/0.4.0/bdg-formats-0.4.0.jar at http://10.55.119.69:52960/jars/bdg-formats-0.4.0.jar with timestamp 1438849650262
+15/08/06 03:27:30 INFO SparkContext: Added JAR file:/root/adam/adam-cli/target/appassembler/repo/org/apache/avro/avro/1.7.6/avro-1.7.6.jar at http://10.55.119.69:52960/jars/avro-1.7.6.jar with timestamp 1438849650264
+15/08/06 03:27:30 INFO SparkContext: Added JAR file:/root/adam/adam-cli/target/appassembler/repo/org/codehaus/jackson/jackson-core-asl/1.9.13/jackson-core-asl-1.9.13.jar at http://10.55.119.69:52960/jars/jackson-core-asl-1.9.13.jar with timestamp 1438849650265
+15/08/06 03:27:30 INFO SparkContext: Added JAR file:/root/adam/adam-cli/target/appassembler/repo/org/codehaus/jackson/jackson-mapper-asl/1.9.13/jackson-mapper-asl-1.9.13.jar at http://10.55.119.69:52960/jars/jackson-mapper-asl-1.9.13.jar with timestamp 1438849650267
+15/08/06 03:27:30 INFO SparkContext: Added JAR file:/root/adam/adam-cli/target/appassembler/repo/com/thoughtworks/paranamer/paranamer/2.3/paranamer-2.3.jar at http://10.55.119.69:52960/jars/paranamer-2.3.jar with timestamp 1438849650268
+15/08/06 03:27:30 INFO SparkContext: Added JAR file:/root/adam/adam-cli/target/appassembler/repo/org/bdgenomics/adam/adam-core_2.10/0.17.1-SNAPSHOT/adam-core_2.10-0.17.1-SNAPSHOT.jar at http://10.55.119.69:52960/jars/adam-core_2.10-0.17.1-SNAPSHOT.jar with timestamp 1438849650274
+15/08/06 03:27:30 INFO SparkContext: Added JAR file:/root/adam/adam-cli/target/appassembler/repo/com/esotericsoftware/kryo/kryo/2.21/kryo-2.21.jar at http://10.55.119.69:52960/jars/kryo-2.21.jar with timestamp 1438849650276
+15/08/06 03:27:30 INFO SparkContext: Added JAR file:/root/adam/adam-cli/target/appassembler/repo/com/esotericsoftware/reflectasm/reflectasm/1.07/reflectasm-1.07-shaded.jar at http://10.55.119.69:52960/jars/reflectasm-1.07-shaded.jar with timestamp 1438849650276
+15/08/06 03:27:30 INFO SparkContext: Added JAR file:/root/adam/adam-cli/target/appassembler/repo/org/ow2/asm/asm/4.0/asm-4.0.jar at http://10.55.119.69:52960/jars/asm-4.0.jar with timestamp 1438849650276
+15/08/06 03:27:30 INFO SparkContext: Added JAR file:/root/adam/adam-cli/target/appassembler/repo/com/esotericsoftware/minlog/minlog/1.2/minlog-1.2.jar at http://10.55.119.69:52960/jars/minlog-1.2.jar with timestamp 1438849650277
+15/08/06 03:27:30 INFO SparkContext: Added JAR file:/root/adam/adam-cli/target/appassembler/repo/org/objenesis/objenesis/1.2/objenesis-1.2.jar at http://10.55.119.69:52960/jars/objenesis-1.2.jar with timestamp 1438849650277
+15/08/06 03:27:30 INFO SparkContext: Added JAR file:/root/adam/adam-cli/target/appassembler/repo/it/unimi/dsi/fastutil/6.4.4/fastutil-6.4.4.jar at http://10.55.119.69:52960/jars/fastutil-6.4.4.jar with timestamp 1438849650324
+15/08/06 03:27:30 INFO SparkContext: Added JAR file:/root/adam/adam-cli/target/appassembler/repo/org/apache/parquet/parquet-scala_2.10/1.8.1/parquet-scala_2.10-1.8.1.jar at http://10.55.119.69:52960/jars/parquet-scala_2.10-1.8.1.jar with timestamp 1438849650324
+15/08/06 03:27:30 INFO SparkContext: Added JAR file:/root/adam/adam-cli/target/appassembler/repo/org/seqdoop/hadoop-bam/7.0.0/hadoop-bam-7.0.0.jar at http://10.55.119.69:52960/jars/hadoop-bam-7.0.0.jar with timestamp 1438849650326
+15/08/06 03:27:30 INFO SparkContext: Added JAR file:/root/adam/adam-cli/target/appassembler/repo/com/github/samtools/htsjdk/1.133/htsjdk-1.133.jar at http://10.55.119.69:52960/jars/htsjdk-1.133.jar with timestamp 1438849650330
+15/08/06 03:27:30 INFO SparkContext: Added JAR file:/root/adam/adam-cli/target/appassembler/repo/org/apache/commons/commons-jexl/2.1.1/commons-jexl-2.1.1.jar at http://10.55.119.69:52960/jars/commons-jexl-2.1.1.jar with timestamp 1438849650331
+15/08/06 03:27:30 INFO SparkContext: Added JAR file:/root/adam/adam-cli/target/appassembler/repo/org/tukaani/xz/1.5/xz-1.5.jar at http://10.55.119.69:52960/jars/xz-1.5.jar with timestamp 1438849650331
+15/08/06 03:27:30 INFO SparkContext: Added JAR file:/root/adam/adam-cli/target/appassembler/repo/org/apache/ant/ant/1.8.2/ant-1.8.2.jar at http://10.55.119.69:52960/jars/ant-1.8.2.jar with timestamp 1438849650337
+15/08/06 03:27:30 INFO SparkContext: Added JAR file:/root/adam/adam-cli/target/appassembler/repo/org/apache/ant/ant-launcher/1.8.2/ant-launcher-1.8.2.jar at http://10.55.119.69:52960/jars/ant-launcher-1.8.2.jar with timestamp 1438849650337
+15/08/06 03:27:30 INFO SparkContext: Added JAR file:/root/adam/adam-cli/target/appassembler/repo/org/testng/testng/6.8.8/testng-6.8.8.jar at http://10.55.119.69:52960/jars/testng-6.8.8.jar with timestamp 1438849650340
+15/08/06 03:27:30 INFO SparkContext: Added JAR file:/root/adam/adam-cli/target/appassembler/repo/org/beanshell/bsh/2.0b4/bsh-2.0b4.jar at http://10.55.119.69:52960/jars/bsh-2.0b4.jar with timestamp 1438849650341
+15/08/06 03:27:30 INFO SparkContext: Added JAR file:/root/adam/adam-cli/target/appassembler/repo/com/beust/jcommander/1.27/jcommander-1.27.jar at http://10.55.119.69:52960/jars/jcommander-1.27.jar with timestamp 1438849650342
+15/08/06 03:27:30 INFO SparkContext: Added JAR file:/root/adam/adam-cli/target/appassembler/repo/com/google/guava/guava/14.0.1/guava-14.0.1.jar at http://10.55.119.69:52960/jars/guava-14.0.1.jar with timestamp 1438849650348
+15/08/06 03:27:30 INFO SparkContext: Added JAR file:/root/adam/adam-cli/target/appassembler/repo/org/bdgenomics/adam/adam-apis_2.10/0.17.1-SNAPSHOT/adam-apis_2.10-0.17.1-SNAPSHOT.jar at http://10.55.119.69:52960/jars/adam-apis_2.10-0.17.1-SNAPSHOT.jar with timestamp 1438849650349
+15/08/06 03:27:30 INFO SparkContext: Added JAR file:/root/adam/adam-cli/target/appassembler/repo/org/scala-lang/scala-library/2.10.4/scala-library-2.10.4.jar at http://10.55.119.69:52960/jars/scala-library-2.10.4.jar with timestamp 1438849650369
+15/08/06 03:27:30 INFO SparkContext: Added JAR file:/root/adam/adam-cli/target/appassembler/repo/org/slf4j/slf4j-log4j12/1.7.5/slf4j-log4j12-1.7.5.jar at http://10.55.119.69:52960/jars/slf4j-log4j12-1.7.5.jar with timestamp 1438849650370
+15/08/06 03:27:30 INFO SparkContext: Added JAR file:/root/adam/adam-cli/target/appassembler/repo/args4j/args4j/2.0.23/args4j-2.0.23.jar at http://10.55.119.69:52960/jars/args4j-2.0.23.jar with timestamp 1438849650370
+15/08/06 03:27:30 INFO SparkContext: Added JAR file:/root/adam/adam-cli/target/appassembler/repo/org/bdgenomics/adam/adam-cli_2.10/0.17.1-SNAPSHOT/adam-cli_2.10-0.17.1-SNAPSHOT.jar at http://10.55.119.69:52960/jars/adam-cli_2.10-0.17.1-SNAPSHOT.jar with timestamp 1438849650372
+15/08/06 03:27:30 INFO SparkContext: Added JAR file:/root/adam/adam-cli/target/appassembler/repo/org/bdgenomics/adam/adam-cli_2.10/0.17.1-SNAPSHOT/adam-cli_2.10-0.17.1-SNAPSHOT.jar at http://10.55.119.69:52960/jars/adam-cli_2.10-0.17.1-SNAPSHOT.jar with timestamp 1438849650373
+15/08/06 03:27:30 WARN SparkConf: The configuration key 'spark.kryoserializer.buffer.mb' has been deprecated as of Spark 1.4 and may be removed in the future. Please use spark.kryoserializer.buffer instead. The default value for spark.kryoserializer.buffer.mb was previously specified as '0.064'. Fractional values are no longer accepted. To specify the equivalent now, one may use '64k'.
+15/08/06 03:27:30 WARN SparkConf: The configuration key 'spark.kryoserializer.buffer.mb' has been deprecated as of Spark 1.4 and and may be removed in the future. Please use the new key 'spark.kryoserializer.buffer' instead.
+15/08/06 03:27:30 WARN SparkConf: The configuration key 'spark.kryoserializer.buffer.mb' has been deprecated as of Spark 1.4 and may be removed in the future. Please use spark.kryoserializer.buffer instead. The default value for spark.kryoserializer.buffer.mb was previously specified as '0.064'. Fractional values are no longer accepted. To specify the equivalent now, one may use '64k'.
+15/08/06 03:27:30 WARN SparkConf: The configuration key 'spark.kryoserializer.buffer.mb' has been deprecated as of Spark 1.4 and and may be removed in the future. Please use the new key 'spark.kryoserializer.buffer' instead.
+15/08/06 03:27:30 WARN SparkConf: The configuration key 'spark.kryoserializer.buffer.mb' has been deprecated as of Spark 1.4 and may be removed in the future. Please use spark.kryoserializer.buffer instead. The default value for spark.kryoserializer.buffer.mb was previously specified as '0.064'. Fractional values are no longer accepted. To specify the equivalent now, one may use '64k'.
+15/08/06 03:27:30 WARN SparkConf: The configuration key 'spark.kryoserializer.buffer.mb' has been deprecated as of Spark 1.4 and and may be removed in the future. Please use the new key 'spark.kryoserializer.buffer' instead.
+15/08/06 03:27:30 INFO Executor: Starting executor ID driver on host localhost
+15/08/06 03:27:30 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 56583.
+15/08/06 03:27:30 INFO NettyBlockTransferService: Server created on 56583
+15/08/06 03:27:30 INFO BlockManagerMaster: Trying to register BlockManager
+15/08/06 03:27:30 INFO BlockManagerMasterEndpoint: Registering block manager localhost:56583 with 2.1 GB RAM, BlockManagerId(driver, localhost, 56583)
+15/08/06 03:27:30 INFO BlockManagerMaster: Registered BlockManager
+15/08/06 03:27:31 INFO MemoryStore: ensureFreeSpace(214000) called with curMem=0, maxMem=2222739947
+15/08/06 03:27:31 INFO MemoryStore: Block broadcast_0 stored as values in memory (estimated size 209.0 KB, free 2.1 GB)
+15/08/06 03:27:32 INFO MemoryStore: ensureFreeSpace(19783) called with curMem=214000, maxMem=2222739947
+15/08/06 03:27:32 INFO MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 19.3 KB, free 2.1 GB)
+15/08/06 03:27:32 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on localhost:56583 (size: 19.3 KB, free: 2.1 GB)
+15/08/06 03:27:32 INFO SparkContext: Created broadcast 0 from newAPIHadoopFile at ADAMContext.scala:316
+15/08/06 03:27:32 INFO ADAMRDDFunctions: Saving data in ADAM format
+15/08/06 03:27:32 INFO deprecation: mapred.output.dir is deprecated. Instead, use mapreduce.output.fileoutputformat.outputdir
+15/08/06 03:27:32 INFO FileInputFormat: Total input paths to process : 1
+15/08/06 03:27:32 INFO SparkContext: Starting job: saveAsNewAPIHadoopFile at ADAMRDDFunctions.scala:75
+15/08/06 03:27:32 INFO DAGScheduler: Got job 0 (saveAsNewAPIHadoopFile at ADAMRDDFunctions.scala:75) with 6 output partitions (allowLocal=false)
+15/08/06 03:27:32 INFO DAGScheduler: Final stage: ResultStage 0(saveAsNewAPIHadoopFile at ADAMRDDFunctions.scala:75)
+15/08/06 03:27:32 INFO DAGScheduler: Parents of final stage: List()
+15/08/06 03:27:32 INFO DAGScheduler: Missing parents: List()
+15/08/06 03:27:32 INFO DAGScheduler: Submitting ResultStage 0 (MapPartitionsRDD[3] at map at ADAMRDDFunctions.scala:73), which has no missing parents
+15/08/06 03:27:32 INFO MemoryStore: ensureFreeSpace(75256) called with curMem=233783, maxMem=2222739947
+15/08/06 03:27:32 INFO MemoryStore: Block broadcast_1 stored as values in memory (estimated size 73.5 KB, free 2.1 GB)
+15/08/06 03:27:32 INFO MemoryStore: ensureFreeSpace(26734) called with curMem=309039, maxMem=2222739947
+15/08/06 03:27:32 INFO MemoryStore: Block broadcast_1_piece0 stored as bytes in memory (estimated size 26.1 KB, free 2.1 GB)
+15/08/06 03:27:32 INFO BlockManagerInfo: Added broadcast_1_piece0 in memory on localhost:56583 (size: 26.1 KB, free: 2.1 GB)
+15/08/06 03:27:32 INFO SparkContext: Created broadcast 1 from broadcast at DAGScheduler.scala:874
+15/08/06 03:27:32 INFO DAGScheduler: Submitting 6 missing tasks from ResultStage 0 (MapPartitionsRDD[3] at map at ADAMRDDFunctions.scala:73)
+15/08/06 03:27:32 INFO TaskSchedulerImpl: Adding task set 0.0 with 6 tasks
+15/08/06 03:27:32 INFO TaskSetManager: Starting task 0.0 in stage 0.0 (TID 0, localhost, PROCESS_LOCAL, 4767 bytes)
+15/08/06 03:27:32 INFO Executor: Running task 0.0 in stage 0.0 (TID 0)
+15/08/06 03:27:32 INFO Executor: Fetching http://10.55.119.69:52960/jars/commons-httpclient-3.1.jar with timestamp 1438849650229
+15/08/06 03:27:32 INFO Utils: Fetching http://10.55.119.69:52960/jars/commons-httpclient-3.1.jar to /tmp/spark-3a5deff5-10d9-47cd-9b10-8f24264c79d5/userFiles-1033e114-2e03-43dc-8bb2-495084020dd3/fetchFileTemp556827647577639835.tmp
+15/08/06 03:27:32 INFO Executor: Adding file:/tmp/spark-3a5deff5-10d9-47cd-9b10-8f24264c79d5/userFiles-1033e114-2e03-43dc-8bb2-495084020dd3/commons-httpclient-3.1.jar to class loader
+15/08/06 03:27:32 INFO Executor: Fetching http://10.55.119.69:52960/jars/bsh-2.0b4.jar with timestamp 1438849650341
+15/08/06 03:27:32 INFO Utils: Fetching http://10.55.119.69:52960/jars/bsh-2.0b4.jar to /tmp/spark-3a5deff5-10d9-47cd-9b10-8f24264c79d5/userFiles-1033e114-2e03-43dc-8bb2-495084020dd3/fetchFileTemp8349646691130309160.tmp
+15/08/06 03:27:33 INFO Executor: Adding file:/tmp/spark-3a5deff5-10d9-47cd-9b10-8f24264c79d5/userFiles-1033e114-2e03-43dc-8bb2-495084020dd3/bsh-2.0b4.jar to class loader
+15/08/06 03:27:33 INFO Executor: Fetching http://10.55.119.69:52960/jars/commons-compress-1.4.1.jar with timestamp 1438849650231
+15/08/06 03:27:33 INFO Utils: Fetching http://10.55.119.69:52960/jars/commons-compress-1.4.1.jar to /tmp/spark-3a5deff5-10d9-47cd-9b10-8f24264c79d5/userFiles-1033e114-2e03-43dc-8bb2-495084020dd3/fetchFileTemp1923558329698913060.tmp
+15/08/06 03:27:33 INFO Executor: Adding file:/tmp/spark-3a5deff5-10d9-47cd-9b10-8f24264c79d5/userFiles-1033e114-2e03-43dc-8bb2-495084020dd3/commons-compress-1.4.1.jar to class loader
+15/08/06 03:27:33 INFO Executor: Fetching http://10.55.119.69:52960/jars/commons-logging-1.1.1.jar with timestamp 1438849650230
+15/08/06 03:27:33 INFO Utils: Fetching http://10.55.119.69:52960/jars/commons-logging-1.1.1.jar to /tmp/spark-3a5deff5-10d9-47cd-9b10-8f24264c79d5/userFiles-1033e114-2e03-43dc-8bb2-495084020dd3/fetchFileTemp7825774103822521302.tmp
+15/08/06 03:27:33 INFO Executor: Adding file:/tmp/spark-3a5deff5-10d9-47cd-9b10-8f24264c79d5/userFiles-1033e114-2e03-43dc-8bb2-495084020dd3/commons-logging-1.1.1.jar to class loader
+15/08/06 03:27:33 INFO Executor: Fetching http://10.55.119.69:52960/jars/utils-io_2.10-0.2.2.jar with timestamp 1438849650236
+15/08/06 03:27:33 INFO Utils: Fetching http://10.55.119.69:52960/jars/utils-io_2.10-0.2.2.jar to /tmp/spark-3a5deff5-10d9-47cd-9b10-8f24264c79d5/userFiles-1033e114-2e03-43dc-8bb2-495084020dd3/fetchFileTemp3776488238875608887.tmp
+15/08/06 03:27:33 INFO Executor: Adding file:/tmp/spark-3a5deff5-10d9-47cd-9b10-8f24264c79d5/userFiles-1033e114-2e03-43dc-8bb2-495084020dd3/utils-io_2.10-0.2.2.jar to class loader
+15/08/06 03:27:33 INFO Executor: Fetching http://10.55.119.69:52960/jars/scalac-scoverage-plugin_2.10-0.99.2.jar with timestamp 1438849650261
+15/08/06 03:27:33 INFO Utils: Fetching http://10.55.119.69:52960/jars/scalac-scoverage-plugin_2.10-0.99.2.jar to /tmp/spark-3a5deff5-10d9-47cd-9b10-8f24264c79d5/userFiles-1033e114-2e03-43dc-8bb2-495084020dd3/fetchFileTemp8070511759627544570.tmp
+15/08/06 03:27:33 INFO Executor: Adding file:/tmp/spark-3a5deff5-10d9-47cd-9b10-8f24264c79d5/userFiles-1033e114-2e03-43dc-8bb2-495084020dd3/scalac-scoverage-plugin_2.10-0.99.2.jar to class loader
+15/08/06 03:27:33 INFO Executor: Fetching http://10.55.119.69:52960/jars/httpclient-4.3.2.jar with timestamp 1438849650239
+15/08/06 03:27:33 INFO Utils: Fetching http://10.55.119.69:52960/jars/httpclient-4.3.2.jar to /tmp/spark-3a5deff5-10d9-47cd-9b10-8f24264c79d5/userFiles-1033e114-2e03-43dc-8bb2-495084020dd3/fetchFileTemp1554891076563547701.tmp
+15/08/06 03:27:33 INFO Executor: Adding file:/tmp/spark-3a5deff5-10d9-47cd-9b10-8f24264c79d5/userFiles-1033e114-2e03-43dc-8bb2-495084020dd3/httpclient-4.3.2.jar to class loader
+15/08/06 03:27:33 INFO Executor: Fetching http://10.55.119.69:52960/jars/args4j-2.0.23.jar with timestamp 1438849650370
+15/08/06 03:27:33 INFO Utils: Fetching http://10.55.119.69:52960/jars/args4j-2.0.23.jar to /tmp/spark-3a5deff5-10d9-47cd-9b10-8f24264c79d5/userFiles-1033e114-2e03-43dc-8bb2-495084020dd3/fetchFileTemp7971941428741897626.tmp
+15/08/06 03:27:33 INFO Executor: Adding file:/tmp/spark-3a5deff5-10d9-47cd-9b10-8f24264c79d5/userFiles-1033e114-2e03-43dc-8bb2-495084020dd3/args4j-2.0.23.jar to class loader
+15/08/06 03:27:33 INFO Executor: Fetching http://10.55.119.69:52960/jars/slf4j-log4j12-1.7.5.jar with timestamp 1438849650370
+15/08/06 03:27:33 INFO Utils: Fetching http://10.55.119.69:52960/jars/slf4j-log4j12-1.7.5.jar to /tmp/spark-3a5deff5-10d9-47cd-9b10-8f24264c79d5/userFiles-1033e114-2e03-43dc-8bb2-495084020dd3/fetchFileTemp8299580240340245484.tmp
+15/08/06 03:27:33 INFO Executor: Adding file:/tmp/spark-3a5deff5-10d9-47cd-9b10-8f24264c79d5/userFiles-1033e114-2e03-43dc-8bb2-495084020dd3/slf4j-log4j12-1.7.5.jar to class loader
+15/08/06 03:27:33 INFO Executor: Fetching http://10.55.119.69:52960/jars/minlog-1.2.jar with timestamp 1438849650277
+15/08/06 03:27:33 INFO Utils: Fetching http://10.55.119.69:52960/jars/minlog-1.2.jar to /tmp/spark-3a5deff5-10d9-47cd-9b10-8f24264c79d5/userFiles-1033e114-2e03-43dc-8bb2-495084020dd3/fetchFileTemp3093285717739327570.tmp
+15/08/06 03:27:33 INFO Executor: Adding file:/tmp/spark-3a5deff5-10d9-47cd-9b10-8f24264c79d5/userFiles-1033e114-2e03-43dc-8bb2-495084020dd3/minlog-1.2.jar to class loader
+15/08/06 03:27:33 INFO Executor: Fetching http://10.55.119.69:52960/jars/ant-1.8.2.jar with timestamp 1438849650337
+15/08/06 03:27:33 INFO Utils: Fetching http://10.55.119.69:52960/jars/ant-1.8.2.jar to /tmp/spark-3a5deff5-10d9-47cd-9b10-8f24264c79d5/userFiles-1033e114-2e03-43dc-8bb2-495084020dd3/fetchFileTemp4585377278575997713.tmp
+15/08/06 03:27:33 INFO Executor: Adding file:/tmp/spark-3a5deff5-10d9-47cd-9b10-8f24264c79d5/userFiles-1033e114-2e03-43dc-8bb2-495084020dd3/ant-1.8.2.jar to class loader
+15/08/06 03:27:33 INFO Executor: Fetching http://10.55.119.69:52960/jars/utils-metrics_2.10-0.2.2.jar with timestamp 1438849650254
+15/08/06 03:27:33 INFO Utils: Fetching http://10.55.119.69:52960/jars/utils-metrics_2.10-0.2.2.jar to /tmp/spark-3a5deff5-10d9-47cd-9b10-8f24264c79d5/userFiles-1033e114-2e03-43dc-8bb2-495084020dd3/fetchFileTemp542339259415938303.tmp
+15/08/06 03:27:33 INFO Executor: Adding file:/tmp/spark-3a5deff5-10d9-47cd-9b10-8f24264c79d5/userFiles-1033e114-2e03-43dc-8bb2-495084020dd3/utils-metrics_2.10-0.2.2.jar to class loader
+15/08/06 03:27:33 INFO Executor: Fetching http://10.55.119.69:52960/jars/asm-4.0.jar with timestamp 1438849650276
+15/08/06 03:27:33 INFO Utils: Fetching http://10.55.119.69:52960/jars/asm-4.0.jar to /tmp/spark-3a5deff5-10d9-47cd-9b10-8f24264c79d5/userFiles-1033e114-2e03-43dc-8bb2-495084020dd3/fetchFileTemp3497059002275976635.tmp
+15/08/06 03:27:33 INFO Executor: Adding file:/tmp/spark-3a5deff5-10d9-47cd-9b10-8f24264c79d5/userFiles-1033e114-2e03-43dc-8bb2-495084020dd3/asm-4.0.jar to class loader
+15/08/06 03:27:33 INFO Executor: Fetching http://10.55.119.69:52960/jars/log4j-1.2.17.jar with timestamp 1438849650234
+15/08/06 03:27:33 INFO Utils: Fetching http://10.55.119.69:52960/jars/log4j-1.2.17.jar to /tmp/spark-3a5deff5-10d9-47cd-9b10-8f24264c79d5/userFiles-1033e114-2e03-43dc-8bb2-495084020dd3/fetchFileTemp5790990467380071533.tmp
+15/08/06 03:27:33 INFO Executor: Adding file:/tmp/spark-3a5deff5-10d9-47cd-9b10-8f24264c79d5/userFiles-1033e114-2e03-43dc-8bb2-495084020dd3/log4j-1.2.17.jar to class loader
+15/08/06 03:27:33 INFO Executor: Fetching http://10.55.119.69:52960/jars/commons-codec-1.4.jar with timestamp 1438849650229
+15/08/06 03:27:33 INFO Utils: Fetching http://10.55.119.69:52960/jars/commons-codec-1.4.jar to /tmp/spark-3a5deff5-10d9-47cd-9b10-8f24264c79d5/userFiles-1033e114-2e03-43dc-8bb2-495084020dd3/fetchFileTemp5226126759432138907.tmp
+15/08/06 03:27:33 INFO Executor: Adding file:/tmp/spark-3a5deff5-10d9-47cd-9b10-8f24264c79d5/userFiles-1033e114-2e03-43dc-8bb2-495084020dd3/commons-codec-1.4.jar to class loader
+15/08/06 03:27:33 INFO Executor: Fetching http://10.55.119.69:52960/jars/parquet-common-1.8.1.jar with timestamp 1438849650245
+15/08/06 03:27:33 INFO Utils: Fetching http://10.55.119.69:52960/jars/parquet-common-1.8.1.jar to /tmp/spark-3a5deff5-10d9-47cd-9b10-8f24264c79d5/userFiles-1033e114-2e03-43dc-8bb2-495084020dd3/fetchFileTemp7001900962498703808.tmp
+15/08/06 03:27:33 INFO Executor: Adding file:/tmp/spark-3a5deff5-10d9-47cd-9b10-8f24264c79d5/userFiles-1033e114-2e03-43dc-8bb2-495084020dd3/parquet-common-1.8.1.jar to class loader
+15/08/06 03:27:33 INFO Executor: Fetching http://10.55.119.69:52960/jars/parquet-column-1.8.1.jar with timestamp 1438849650245
+15/08/06 03:27:33 INFO Utils: Fetching http://10.55.119.69:52960/jars/parquet-column-1.8.1.jar to /tmp/spark-3a5deff5-10d9-47cd-9b10-8f24264c79d5/userFiles-1033e114-2e03-43dc-8bb2-495084020dd3/fetchFileTemp2241959208335218166.tmp
+15/08/06 03:27:33 INFO Executor: Adding file:/tmp/spark-3a5deff5-10d9-47cd-9b10-8f24264c79d5/userFiles-1033e114-2e03-43dc-8bb2-495084020dd3/parquet-column-1.8.1.jar to class loader
+15/08/06 03:27:33 INFO Executor: Fetching http://10.55.119.69:52960/jars/parquet-jackson-1.8.1.jar with timestamp 1438849650251
+15/08/06 03:27:33 INFO Utils: Fetching http://10.55.119.69:52960/jars/parquet-jackson-1.8.1.jar to /tmp/spark-3a5deff5-10d9-47cd-9b10-8f24264c79d5/userFiles-1033e114-2e03-43dc-8bb2-495084020dd3/fetchFileTemp5069092948362611318.tmp
+15/08/06 03:27:33 INFO Executor: Adding file:/tmp/spark-3a5deff5-10d9-47cd-9b10-8f24264c79d5/userFiles-1033e114-2e03-43dc-8bb2-495084020dd3/parquet-jackson-1.8.1.jar to class loader
+15/08/06 03:27:33 INFO Executor: Fetching http://10.55.119.69:52960/jars/adam-cli_2.10-0.17.1-SNAPSHOT.jar with timestamp 1438849650373
+15/08/06 03:27:33 INFO Utils: Fetching http://10.55.119.69:52960/jars/adam-cli_2.10-0.17.1-SNAPSHOT.jar to /tmp/spark-3a5deff5-10d9-47cd-9b10-8f24264c79d5/userFiles-1033e114-2e03-43dc-8bb2-495084020dd3/fetchFileTemp1810034101897293650.tmp
+15/08/06 03:27:33 INFO Executor: Adding file:/tmp/spark-3a5deff5-10d9-47cd-9b10-8f24264c79d5/userFiles-1033e114-2e03-43dc-8bb2-495084020dd3/adam-cli_2.10-0.17.1-SNAPSHOT.jar to class loader
+15/08/06 03:27:33 INFO Executor: Fetching http://10.55.119.69:52960/jars/ant-launcher-1.8.2.jar with timestamp 1438849650337
+15/08/06 03:27:33 INFO Utils: Fetching http://10.55.119.69:52960/jars/ant-launcher-1.8.2.jar to /tmp/spark-3a5deff5-10d9-47cd-9b10-8f24264c79d5/userFiles-1033e114-2e03-43dc-8bb2-495084020dd3/fetchFileTemp5141676490388267542.tmp
+15/08/06 03:27:33 INFO Executor: Adding file:/tmp/spark-3a5deff5-10d9-47cd-9b10-8f24264c79d5/userFiles-1033e114-2e03-43dc-8bb2-495084020dd3/ant-launcher-1.8.2.jar to class loader
+15/08/06 03:27:33 INFO Executor: Fetching http://10.55.119.69:52960/jars/jackson-mapper-asl-1.9.13.jar with timestamp 1438849650267
+15/08/06 03:27:33 INFO Utils: Fetching http://10.55.119.69:52960/jars/jackson-mapper-asl-1.9.13.jar to /tmp/spark-3a5deff5-10d9-47cd-9b10-8f24264c79d5/userFiles-1033e114-2e03-43dc-8bb2-495084020dd3/fetchFileTemp5192166174059408248.tmp
+15/08/06 03:27:33 INFO Executor: Adding file:/tmp/spark-3a5deff5-10d9-47cd-9b10-8f24264c79d5/userFiles-1033e114-2e03-43dc-8bb2-495084020dd3/jackson-mapper-asl-1.9.13.jar to class loader
+15/08/06 03:27:33 INFO Executor: Fetching http://10.55.119.69:52960/jars/testng-6.8.8.jar with timestamp 1438849650340
+15/08/06 03:27:33 INFO Utils: Fetching http://10.55.119.69:52960/jars/testng-6.8.8.jar to /tmp/spark-3a5deff5-10d9-47cd-9b10-8f24264c79d5/userFiles-1033e114-2e03-43dc-8bb2-495084020dd3/fetchFileTemp1959711581073056463.tmp
+15/08/06 03:27:33 INFO Executor: Adding file:/tmp/spark-3a5deff5-10d9-47cd-9b10-8f24264c79d5/userFiles-1033e114-2e03-43dc-8bb2-495084020dd3/testng-6.8.8.jar to class loader
+15/08/06 03:27:33 INFO Executor: Fetching http://10.55.119.69:52960/jars/servo-core-0.5.5.jar with timestamp 1438849650260
+15/08/06 03:27:33 INFO Utils: Fetching http://10.55.119.69:52960/jars/servo-core-0.5.5.jar to /tmp/spark-3a5deff5-10d9-47cd-9b10-8f24264c79d5/userFiles-1033e114-2e03-43dc-8bb2-495084020dd3/fetchFileTemp2009290351458607414.tmp
+15/08/06 03:27:33 INFO Executor: Adding file:/tmp/spark-3a5deff5-10d9-47cd-9b10-8f24264c79d5/userFiles-1033e114-2e03-43dc-8bb2-495084020dd3/servo-core-0.5.5.jar to class loader
+15/08/06 03:27:33 INFO Executor: Fetching http://10.55.119.69:52960/jars/fastutil-6.4.4.jar with timestamp 1438849650324
+15/08/06 03:27:33 INFO Utils: Fetching http://10.55.119.69:52960/jars/fastutil-6.4.4.jar to /tmp/spark-3a5deff5-10d9-47cd-9b10-8f24264c79d5/userFiles-1033e114-2e03-43dc-8bb2-495084020dd3/fetchFileTemp7092448993545396250.tmp
+15/08/06 03:27:33 INFO Executor: Adding file:/tmp/spark-3a5deff5-10d9-47cd-9b10-8f24264c79d5/userFiles-1033e114-2e03-43dc-8bb2-495084020dd3/fastutil-6.4.4.jar to class loader
+15/08/06 03:27:33 INFO Executor: Fetching http://10.55.119.69:52960/jars/parquet-hadoop-1.8.1.jar with timestamp 1438849650247
+15/08/06 03:27:33 INFO Utils: Fetching http://10.55.119.69:52960/jars/parquet-hadoop-1.8.1.jar to /tmp/spark-3a5deff5-10d9-47cd-9b10-8f24264c79d5/userFiles-1033e114-2e03-43dc-8bb2-495084020dd3/fetchFileTemp709466109429742474.tmp
+15/08/06 03:27:33 INFO Executor: Adding file:/tmp/spark-3a5deff5-10d9-47cd-9b10-8f24264c79d5/userFiles-1033e114-2e03-43dc-8bb2-495084020dd3/parquet-hadoop-1.8.1.jar to class loader
+15/08/06 03:27:33 INFO Executor: Fetching http://10.55.119.69:52960/jars/bdg-formats-0.4.0.jar with timestamp 1438849650262
+15/08/06 03:27:33 INFO Utils: Fetching http://10.55.119.69:52960/jars/bdg-formats-0.4.0.jar to /tmp/spark-3a5deff5-10d9-47cd-9b10-8f24264c79d5/userFiles-1033e114-2e03-43dc-8bb2-495084020dd3/fetchFileTemp457074825075729268.tmp
+15/08/06 03:27:33 INFO Executor: Adding file:/tmp/spark-3a5deff5-10d9-47cd-9b10-8f24264c79d5/userFiles-1033e114-2e03-43dc-8bb2-495084020dd3/bdg-formats-0.4.0.jar to class loader
+15/08/06 03:27:33 INFO Executor: Fetching http://10.55.119.69:52960/jars/parquet-format-2.3.0-incubating.jar with timestamp 1438849650252
+15/08/06 03:27:33 INFO Utils: Fetching http://10.55.119.69:52960/jars/parquet-format-2.3.0-incubating.jar to /tmp/spark-3a5deff5-10d9-47cd-9b10-8f24264c79d5/userFiles-1033e114-2e03-43dc-8bb2-495084020dd3/fetchFileTemp2710639770300944224.tmp
+15/08/06 03:27:33 INFO Executor: Adding file:/tmp/spark-3a5deff5-10d9-47cd-9b10-8f24264c79d5/userFiles-1033e114-2e03-43dc-8bb2-495084020dd3/parquet-format-2.3.0-incubating.jar to class loader
+15/08/06 03:27:33 INFO Executor: Fetching http://10.55.119.69:52960/jars/annotations-2.0.0.jar with timestamp 1438849650260
+15/08/06 03:27:33 INFO Utils: Fetching http://10.55.119.69:52960/jars/annotations-2.0.0.jar to /tmp/spark-3a5deff5-10d9-47cd-9b10-8f24264c79d5/userFiles-1033e114-2e03-43dc-8bb2-495084020dd3/fetchFileTemp7691904740359336679.tmp
+15/08/06 03:27:33 INFO Executor: Adding file:/tmp/spark-3a5deff5-10d9-47cd-9b10-8f24264c79d5/userFiles-1033e114-2e03-43dc-8bb2-495084020dd3/annotations-2.0.0.jar to class loader
+15/08/06 03:27:33 INFO Executor: Fetching http://10.55.119.69:52960/jars/commons-jexl-2.1.1.jar with timestamp 1438849650331
+15/08/06 03:27:33 INFO Utils: Fetching http://10.55.119.69:52960/jars/commons-jexl-2.1.1.jar to /tmp/spark-3a5deff5-10d9-47cd-9b10-8f24264c79d5/userFiles-1033e114-2e03-43dc-8bb2-495084020dd3/fetchFileTemp1518984190183104421.tmp
+15/08/06 03:27:33 INFO Executor: Adding file:/tmp/spark-3a5deff5-10d9-47cd-9b10-8f24264c79d5/userFiles-1033e114-2e03-43dc-8bb2-495084020dd3/commons-jexl-2.1.1.jar to class loader
+15/08/06 03:27:33 INFO Executor: Fetching http://10.55.119.69:52960/jars/avro-1.7.6.jar with timestamp 1438849650264
+15/08/06 03:27:33 INFO Utils: Fetching http://10.55.119.69:52960/jars/avro-1.7.6.jar to /tmp/spark-3a5deff5-10d9-47cd-9b10-8f24264c79d5/userFiles-1033e114-2e03-43dc-8bb2-495084020dd3/fetchFileTemp8997486490511681879.tmp
+15/08/06 03:27:33 INFO Executor: Adding file:/tmp/spark-3a5deff5-10d9-47cd-9b10-8f24264c79d5/userFiles-1033e114-2e03-43dc-8bb2-495084020dd3/avro-1.7.6.jar to class loader
+15/08/06 03:27:33 INFO Executor: Fetching http://10.55.119.69:52960/jars/commons-cli-1.2.jar with timestamp 1438849650227
+15/08/06 03:27:33 INFO Utils: Fetching http://10.55.119.69:52960/jars/commons-cli-1.2.jar to /tmp/spark-3a5deff5-10d9-47cd-9b10-8f24264c79d5/userFiles-1033e114-2e03-43dc-8bb2-495084020dd3/fetchFileTemp364134677018094245.tmp
+15/08/06 03:27:33 INFO Executor: Adding file:/tmp/spark-3a5deff5-10d9-47cd-9b10-8f24264c79d5/userFiles-1033e114-2e03-43dc-8bb2-495084020dd3/commons-cli-1.2.jar to class loader
+15/08/06 03:27:33 INFO Executor: Fetching http://10.55.119.69:52960/jars/parquet-encoding-1.8.1.jar with timestamp 1438849650246
+15/08/06 03:27:33 INFO Utils: Fetching http://10.55.119.69:52960/jars/parquet-encoding-1.8.1.jar to /tmp/spark-3a5deff5-10d9-47cd-9b10-8f24264c79d5/userFiles-1033e114-2e03-43dc-8bb2-495084020dd3/fetchFileTemp2641551062964658309.tmp
+15/08/06 03:27:33 INFO Executor: Adding file:/tmp/spark-3a5deff5-10d9-47cd-9b10-8f24264c79d5/userFiles-1033e114-2e03-43dc-8bb2-495084020dd3/parquet-encoding-1.8.1.jar to class loader
+15/08/06 03:27:33 INFO Executor: Fetching http://10.55.119.69:52960/jars/htsjdk-1.133.jar with timestamp 1438849650330
+15/08/06 03:27:33 INFO Utils: Fetching http://10.55.119.69:52960/jars/htsjdk-1.133.jar to /tmp/spark-3a5deff5-10d9-47cd-9b10-8f24264c79d5/userFiles-1033e114-2e03-43dc-8bb2-495084020dd3/fetchFileTemp1944980990337746194.tmp
+15/08/06 03:27:33 INFO Executor: Adding file:/tmp/spark-3a5deff5-10d9-47cd-9b10-8f24264c79d5/userFiles-1033e114-2e03-43dc-8bb2-495084020dd3/htsjdk-1.133.jar to class loader
+15/08/06 03:27:33 INFO Executor: Fetching http://10.55.119.69:52960/jars/adam-apis_2.10-0.17.1-SNAPSHOT.jar with timestamp 1438849650349
+15/08/06 03:27:33 INFO Utils: Fetching http://10.55.119.69:52960/jars/adam-apis_2.10-0.17.1-SNAPSHOT.jar to /tmp/spark-3a5deff5-10d9-47cd-9b10-8f24264c79d5/userFiles-1033e114-2e03-43dc-8bb2-495084020dd3/fetchFileTemp4223044216236466054.tmp
+15/08/06 03:27:33 INFO Executor: Adding file:/tmp/spark-3a5deff5-10d9-47cd-9b10-8f24264c79d5/userFiles-1033e114-2e03-43dc-8bb2-495084020dd3/adam-apis_2.10-0.17.1-SNAPSHOT.jar to class loader
+15/08/06 03:27:33 INFO Executor: Fetching http://10.55.119.69:52960/jars/jcommander-1.27.jar with timestamp 1438849650342
+15/08/06 03:27:33 INFO Utils: Fetching http://10.55.119.69:52960/jars/jcommander-1.27.jar to /tmp/spark-3a5deff5-10d9-47cd-9b10-8f24264c79d5/userFiles-1033e114-2e03-43dc-8bb2-495084020dd3/fetchFileTemp7892943679599285631.tmp
+15/08/06 03:27:33 INFO Executor: Adding file:/tmp/spark-3a5deff5-10d9-47cd-9b10-8f24264c79d5/userFiles-1033e114-2e03-43dc-8bb2-495084020dd3/jcommander-1.27.jar to class loader
+15/08/06 03:27:33 INFO Executor: Fetching http://10.55.119.69:52960/jars/utils-misc_2.10-0.2.2.jar with timestamp 1438849650237
+15/08/06 03:27:33 INFO Utils: Fetching http://10.55.119.69:52960/jars/utils-misc_2.10-0.2.2.jar to /tmp/spark-3a5deff5-10d9-47cd-9b10-8f24264c79d5/userFiles-1033e114-2e03-43dc-8bb2-495084020dd3/fetchFileTemp7560916191770794002.tmp
+15/08/06 03:27:33 INFO Executor: Adding file:/tmp/spark-3a5deff5-10d9-47cd-9b10-8f24264c79d5/userFiles-1033e114-2e03-43dc-8bb2-495084020dd3/utils-misc_2.10-0.2.2.jar to class loader
+15/08/06 03:27:33 INFO Executor: Fetching http://10.55.119.69:52960/jars/parquet-avro-1.8.1.jar with timestamp 1438849650241
+15/08/06 03:27:33 INFO Utils: Fetching http://10.55.119.69:52960/jars/parquet-avro-1.8.1.jar to /tmp/spark-3a5deff5-10d9-47cd-9b10-8f24264c79d5/userFiles-1033e114-2e03-43dc-8bb2-495084020dd3/fetchFileTemp4235546626264722312.tmp
+15/08/06 03:27:33 INFO Executor: Adding file:/tmp/spark-3a5deff5-10d9-47cd-9b10-8f24264c79d5/userFiles-1033e114-2e03-43dc-8bb2-495084020dd3/parquet-avro-1.8.1.jar to class loader
+15/08/06 03:27:33 INFO Executor: Fetching http://10.55.119.69:52960/jars/parquet-scala_2.10-1.8.1.jar with timestamp 1438849650324
+15/08/06 03:27:33 INFO Utils: Fetching http://10.55.119.69:52960/jars/parquet-scala_2.10-1.8.1.jar to /tmp/spark-3a5deff5-10d9-47cd-9b10-8f24264c79d5/userFiles-1033e114-2e03-43dc-8bb2-495084020dd3/fetchFileTemp3875033832622643586.tmp
+15/08/06 03:27:33 INFO Executor: Adding file:/tmp/spark-3a5deff5-10d9-47cd-9b10-8f24264c79d5/userFiles-1033e114-2e03-43dc-8bb2-495084020dd3/parquet-scala_2.10-1.8.1.jar to class loader
+15/08/06 03:27:33 INFO Executor: Fetching http://10.55.119.69:52960/jars/hadoop-bam-7.0.0.jar with timestamp 1438849650326
+15/08/06 03:27:33 INFO Utils: Fetching http://10.55.119.69:52960/jars/hadoop-bam-7.0.0.jar to /tmp/spark-3a5deff5-10d9-47cd-9b10-8f24264c79d5/userFiles-1033e114-2e03-43dc-8bb2-495084020dd3/fetchFileTemp1818799279788871601.tmp
+15/08/06 03:27:33 INFO Executor: Adding file:/tmp/spark-3a5deff5-10d9-47cd-9b10-8f24264c79d5/userFiles-1033e114-2e03-43dc-8bb2-495084020dd3/hadoop-bam-7.0.0.jar to class loader
+15/08/06 03:27:33 INFO Executor: Fetching http://10.55.119.69:52960/jars/xz-1.5.jar with timestamp 1438849650331
+15/08/06 03:27:33 INFO Utils: Fetching http://10.55.119.69:52960/jars/xz-1.5.jar to /tmp/spark-3a5deff5-10d9-47cd-9b10-8f24264c79d5/userFiles-1033e114-2e03-43dc-8bb2-495084020dd3/fetchFileTemp2385340077861734635.tmp
+15/08/06 03:27:33 INFO Executor: Adding file:/tmp/spark-3a5deff5-10d9-47cd-9b10-8f24264c79d5/userFiles-1033e114-2e03-43dc-8bb2-495084020dd3/xz-1.5.jar to class loader
+15/08/06 03:27:33 INFO Executor: Fetching http://10.55.119.69:52960/jars/guava-14.0.1.jar with timestamp 1438849650348
+15/08/06 03:27:33 INFO Utils: Fetching http://10.55.119.69:52960/jars/guava-14.0.1.jar to /tmp/spark-3a5deff5-10d9-47cd-9b10-8f24264c79d5/userFiles-1033e114-2e03-43dc-8bb2-495084020dd3/fetchFileTemp2861707277347443756.tmp
+15/08/06 03:27:33 INFO Executor: Adding file:/tmp/spark-3a5deff5-10d9-47cd-9b10-8f24264c79d5/userFiles-1033e114-2e03-43dc-8bb2-495084020dd3/guava-14.0.1.jar to class loader
+15/08/06 03:27:33 INFO Executor: Fetching http://10.55.119.69:52960/jars/commons-io-1.3.2.jar with timestamp 1438849650262
+15/08/06 03:27:33 INFO Utils: Fetching http://10.55.119.69:52960/jars/commons-io-1.3.2.jar to /tmp/spark-3a5deff5-10d9-47cd-9b10-8f24264c79d5/userFiles-1033e114-2e03-43dc-8bb2-495084020dd3/fetchFileTemp4433602622979630169.tmp
+15/08/06 03:27:33 INFO Executor: Adding file:/tmp/spark-3a5deff5-10d9-47cd-9b10-8f24264c79d5/userFiles-1033e114-2e03-43dc-8bb2-495084020dd3/commons-io-1.3.2.jar to class loader
+15/08/06 03:27:33 INFO Executor: Fetching http://10.55.119.69:52960/jars/scala-library-2.10.4.jar with timestamp 1438849650369
+15/08/06 03:27:33 INFO Utils: Fetching http://10.55.119.69:52960/jars/scala-library-2.10.4.jar to /tmp/spark-3a5deff5-10d9-47cd-9b10-8f24264c79d5/userFiles-1033e114-2e03-43dc-8bb2-495084020dd3/fetchFileTemp4415604201394353793.tmp
+15/08/06 03:27:33 INFO Executor: Adding file:/tmp/spark-3a5deff5-10d9-47cd-9b10-8f24264c79d5/userFiles-1033e114-2e03-43dc-8bb2-495084020dd3/scala-library-2.10.4.jar to class loader
+15/08/06 03:27:33 INFO Executor: Fetching http://10.55.119.69:52960/jars/reflectasm-1.07-shaded.jar with timestamp 1438849650276
+15/08/06 03:27:33 INFO Utils: Fetching http://10.55.119.69:52960/jars/reflectasm-1.07-shaded.jar to /tmp/spark-3a5deff5-10d9-47cd-9b10-8f24264c79d5/userFiles-1033e114-2e03-43dc-8bb2-495084020dd3/fetchFileTemp6273973967147953773.tmp
+15/08/06 03:27:33 INFO Executor: Adding file:/tmp/spark-3a5deff5-10d9-47cd-9b10-8f24264c79d5/userFiles-1033e114-2e03-43dc-8bb2-495084020dd3/reflectasm-1.07-shaded.jar to class loader
+15/08/06 03:27:33 INFO Executor: Fetching http://10.55.119.69:52960/jars/adam-core_2.10-0.17.1-SNAPSHOT.jar with timestamp 1438849650274
+15/08/06 03:27:33 INFO Utils: Fetching http://10.55.119.69:52960/jars/adam-core_2.10-0.17.1-SNAPSHOT.jar to /tmp/spark-3a5deff5-10d9-47cd-9b10-8f24264c79d5/userFiles-1033e114-2e03-43dc-8bb2-495084020dd3/fetchFileTemp1493699896408334401.tmp
+15/08/06 03:27:33 INFO Executor: Adding file:/tmp/spark-3a5deff5-10d9-47cd-9b10-8f24264c79d5/userFiles-1033e114-2e03-43dc-8bb2-495084020dd3/adam-core_2.10-0.17.1-SNAPSHOT.jar to class loader
+15/08/06 03:27:33 INFO Executor: Fetching http://10.55.119.69:52960/jars/paranamer-2.3.jar with timestamp 1438849650268
+15/08/06 03:27:33 INFO Utils: Fetching http://10.55.119.69:52960/jars/paranamer-2.3.jar to /tmp/spark-3a5deff5-10d9-47cd-9b10-8f24264c79d5/userFiles-1033e114-2e03-43dc-8bb2-495084020dd3/fetchFileTemp6607646829658360664.tmp
+15/08/06 03:27:33 INFO Executor: Adding file:/tmp/spark-3a5deff5-10d9-47cd-9b10-8f24264c79d5/userFiles-1033e114-2e03-43dc-8bb2-495084020dd3/paranamer-2.3.jar to class loader
+15/08/06 03:27:33 INFO Executor: Fetching http://10.55.119.69:52960/jars/jackson-core-asl-1.9.13.jar with timestamp 1438849650265
+15/08/06 03:27:33 INFO Utils: Fetching http://10.55.119.69:52960/jars/jackson-core-asl-1.9.13.jar to /tmp/spark-3a5deff5-10d9-47cd-9b10-8f24264c79d5/userFiles-1033e114-2e03-43dc-8bb2-495084020dd3/fetchFileTemp3179322108455324022.tmp
+15/08/06 03:27:33 INFO Executor: Adding file:/tmp/spark-3a5deff5-10d9-47cd-9b10-8f24264c79d5/userFiles-1033e114-2e03-43dc-8bb2-495084020dd3/jackson-core-asl-1.9.13.jar to class loader
+15/08/06 03:27:33 INFO Executor: Fetching http://10.55.119.69:52960/jars/httpcore-4.3.1.jar with timestamp 1438849650240
+15/08/06 03:27:33 INFO Utils: Fetching http://10.55.119.69:52960/jars/httpcore-4.3.1.jar to /tmp/spark-3a5deff5-10d9-47cd-9b10-8f24264c79d5/userFiles-1033e114-2e03-43dc-8bb2-495084020dd3/fetchFileTemp7185513604495989781.tmp
+15/08/06 03:27:33 INFO Executor: Adding file:/tmp/spark-3a5deff5-10d9-47cd-9b10-8f24264c79d5/userFiles-1033e114-2e03-43dc-8bb2-495084020dd3/httpcore-4.3.1.jar to class loader
+15/08/06 03:27:33 INFO Executor: Fetching http://10.55.119.69:52960/jars/objenesis-1.2.jar with timestamp 1438849650277
+15/08/06 03:27:33 INFO Utils: Fetching http://10.55.119.69:52960/jars/objenesis-1.2.jar to /tmp/spark-3a5deff5-10d9-47cd-9b10-8f24264c79d5/userFiles-1033e114-2e03-43dc-8bb2-495084020dd3/fetchFileTemp692683307207719504.tmp
+15/08/06 03:27:33 INFO Executor: Adding file:/tmp/spark-3a5deff5-10d9-47cd-9b10-8f24264c79d5/userFiles-1033e114-2e03-43dc-8bb2-495084020dd3/objenesis-1.2.jar to class loader
+15/08/06 03:27:33 INFO Executor: Fetching http://10.55.119.69:52960/jars/kryo-2.21.jar with timestamp 1438849650276
+15/08/06 03:27:33 INFO Utils: Fetching http://10.55.119.69:52960/jars/kryo-2.21.jar to /tmp/spark-3a5deff5-10d9-47cd-9b10-8f24264c79d5/userFiles-1033e114-2e03-43dc-8bb2-495084020dd3/fetchFileTemp1481699528200084622.tmp
+15/08/06 03:27:33 INFO Executor: Adding file:/tmp/spark-3a5deff5-10d9-47cd-9b10-8f24264c79d5/userFiles-1033e114-2e03-43dc-8bb2-495084020dd3/kryo-2.21.jar to class loader
+15/08/06 03:27:33 INFO Executor: Fetching http://10.55.119.69:52960/jars/snappy-java-1.1.1.6.jar with timestamp 1438849650236
+15/08/06 03:27:33 INFO Utils: Fetching http://10.55.119.69:52960/jars/snappy-java-1.1.1.6.jar to /tmp/spark-3a5deff5-10d9-47cd-9b10-8f24264c79d5/userFiles-1033e114-2e03-43dc-8bb2-495084020dd3/fetchFileTemp1876705998818173236.tmp
+15/08/06 03:27:33 INFO Executor: Adding file:/tmp/spark-3a5deff5-10d9-47cd-9b10-8f24264c79d5/userFiles-1033e114-2e03-43dc-8bb2-495084020dd3/snappy-java-1.1.1.6.jar to class loader
+15/08/06 03:27:33 INFO Executor: Fetching http://10.55.119.69:52960/jars/utils-cli_2.10-0.2.2.jar with timestamp 1438849650240
+15/08/06 03:27:33 INFO Utils: Fetching http://10.55.119.69:52960/jars/utils-cli_2.10-0.2.2.jar to /tmp/spark-3a5deff5-10d9-47cd-9b10-8f24264c79d5/userFiles-1033e114-2e03-43dc-8bb2-495084020dd3/fetchFileTemp7012725729397525969.tmp
+15/08/06 03:27:33 INFO Executor: Adding file:/tmp/spark-3a5deff5-10d9-47cd-9b10-8f24264c79d5/userFiles-1033e114-2e03-43dc-8bb2-495084020dd3/utils-cli_2.10-0.2.2.jar to class loader
+15/08/06 03:27:33 INFO Executor: Fetching http://10.55.119.69:52960/jars/slf4j-api-1.7.5.jar with timestamp 1438849650231
+15/08/06 03:27:33 INFO Utils: Fetching http://10.55.119.69:52960/jars/slf4j-api-1.7.5.jar to /tmp/spark-3a5deff5-10d9-47cd-9b10-8f24264c79d5/userFiles-1033e114-2e03-43dc-8bb2-495084020dd3/fetchFileTemp6357679038111428003.tmp
+15/08/06 03:27:33 INFO Executor: Adding file:/tmp/spark-3a5deff5-10d9-47cd-9b10-8f24264c79d5/userFiles-1033e114-2e03-43dc-8bb2-495084020dd3/slf4j-api-1.7.5.jar to class loader
+15/08/06 03:27:33 INFO NewHadoopRDD: Input split: file:/root/genedata/all.y.vcf:0+33554432
+15/08/06 03:27:33 INFO CodecPool: Got brand-new compressor [.gz]
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Aug 6, 2015 3:27:33 AM INFO: org.apache.parquet.hadoop.codec.CodecConfig: Compression: GZIP
+Aug 6, 2015 3:27:33 AM INFO: org.apache.parquet.hadoop.ParquetOutputFormat: Parquet block size to 134217728
+Aug 6, 2015 3:27:33 AM INFO: org.apache.parquet.hadoop.ParquetOutputFormat: Parquet page size to 1048576
+Aug 6, 2015 3:27:33 AM INFO: org.apache.parquet.hadoop.ParquetOutputFormat: Parquet dictionary page size to 1048576
+Aug 6, 2015 3:27:33 AM INFO: org.apache.parquet.hadoop.ParquetOutputFormat: Dictionary is on
+Aug 6, 2015 3:27:33 AM INFO: org.apache.parquet.hadoop.ParquetOutputFormat: Validation is off
+Aug 6, 2015 3:27:33 AM INFO: org.apache.parquet.hadoop.ParquetOutputFormat: Writer version is: PARQUET_1_0
+Aug 6, 2015 3:27:33 AM INFO: org.apache.parquet.hadoop.ParquetOutputFormat: Maximum row group padding size is 0 bytes
+Aug 6, 2015 3:29:36 AM INFO: org.apache.parquet.hadoop.InternalParquetRecordWriter: Flushing mem columnStore to file. allocated memory: 9,431,956
+Aug 6, 2015 3:29:36 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 4,189B for [variant, contig, contigName] BINARY: 14,850,252 values, 852B raw, 2,130B comp, 71 pages, encodings: [BIT_PACKED, RLE, PLAIN_DICTIONARY], dic { 1 entries, 5B raw, 1B comp}
+Aug 6, 2015 3:29:36 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [variant, contig, contigLength] INT64: 14,850,252 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:29:36 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [variant, contig, contigMD5] BINARY: 14,850,252 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:29:36 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [variant, contig, referenceURL] BINARY: 14,850,252 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:29:36 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [variant, contig, assembly] BINARY: 14,850,252 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:29:36 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [variant, contig, species] BINARY: 14,850,252 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:29:36 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 28,100B for [variant, start] INT64: 14,850,252 values, 49,371B raw, 22,970B comp, 114 pages, encodings: [BIT_PACKED, RLE, PLAIN_DICTIONARY], dic { 12,027 entries, 96,216B raw, 12,027B comp}
+Aug 6, 2015 3:29:36 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 28,095B for [variant, end] INT64: 14,850,252 values, 49,367B raw, 22,965B comp, 114 pages, encodings: [BIT_PACKED, RLE, PLAIN_DICTIONARY], dic { 12,026 entries, 96,208B raw, 12,026B comp}
+Aug 6, 2015 3:29:36 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 14,378B for [variant, referenceAllele] BINARY: 14,850,252 values, 27,535B raw, 12,022B comp, 72 pages, encodings: [BIT_PACKED, RLE, PLAIN_DICTIONARY], dic { 82 entries, 772B raw, 82B comp}
+Aug 6, 2015 3:29:36 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 14,142B for [variant, alternateAllele] BINARY: 14,850,252 values, 27,706B raw, 11,857B comp, 72 pages, encodings: [BIT_PACKED, RLE, PLAIN_DICTIONARY], dic { 41 entries, 348B raw, 41B comp}
+Aug 6, 2015 3:29:36 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [variant, svAllele, type] BINARY: 14,850,252 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:29:36 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [variant, svAllele, assembly] BINARY: 14,850,252 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:29:36 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [variant, svAllele, precise] BOOLEAN: 14,850,252 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:29:36 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [variant, svAllele, startWindow] INT32: 14,850,252 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:29:36 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [variant, svAllele, endWindow] INT32: 14,850,252 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:29:36 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 3,649B for [variantCallingAnnotations, variantCallErrorProbability] FLOAT: 14,850,252 values, 684B raw, 1,654B comp, 57 pages, encodings: [BIT_PACKED, RLE, PLAIN_DICTIONARY], dic { 1 entries, 4B raw, 1B comp}
+Aug 6, 2015 3:29:36 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 1,958B for [variantCallingAnnotations, variantIsPassing] BOOLEAN: 14,850,252 values, 1,856,301B raw, 1,891B comp, 2 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:29:36 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 60B for [variantCallingAnnotations, variantFilters, array] BINARY: 14,850,252 values, 18B raw, 33B comp, 1 pages, encodings: [RLE, PLAIN]
+Aug 6, 2015 3:29:36 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 32,571B for [variantCallingAnnotations, readDepth] INT32: 14,850,252 values, 48,337B raw, 30,455B comp, 57 pages, encodings: [BIT_PACKED, RLE, PLAIN_DICTIONARY], dic { 3,374 entries, 13,496B raw, 3,374B comp}
+Aug 6, 2015 3:29:36 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [variantCallingAnnotations, downsampled] BOOLEAN: 14,850,252 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:29:36 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [variantCallingAnnotations, baseQRankSum] FLOAT: 14,850,252 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:29:36 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [variantCallingAnnotations, clippingRankSum] FLOAT: 14,850,252 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:29:36 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [variantCallingAnnotations, fisherStrandBiasPValue] FLOAT: 14,850,252 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:29:36 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [variantCallingAnnotations, haplotypeScore] FLOAT: 14,850,252 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:29:36 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [variantCallingAnnotations, inbreedingCoefficient] FLOAT: 14,850,252 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:29:36 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [variantCallingAnnotations, rmsMapQ] FLOAT: 14,850,252 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:29:36 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [variantCallingAnnotations, mapq0Reads] INT32: 14,850,252 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:29:36 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [variantCallingAnnotations, mqRankSum] FLOAT: 14,850,252 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:29:36 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [variantCallingAnnotations, variantQualityByDepth] FLOAT: 14,850,252 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:29:36 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [variantCallingAnnotations, readPositionRankSum] FLOAT: 14,850,252 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:29:36 AM I15/08/06 03:29:36 INFO FileOutputCommitter: Saved output of task 'attempt_201508060327_0003_r_000000_0' to file:/root/genedata/all.y.adam/_temporary/0/task_201508060327_0003_r_000000
+15/08/06 03:29:36 INFO Executor: Finished task 0.0 in stage 0.0 (TID 0). 2043 bytes result sent to driver
+15/08/06 03:29:36 INFO TaskSetManager: Starting task 1.0 in stage 0.0 (TID 1, localhost, PROCESS_LOCAL, 4767 bytes)
+15/08/06 03:29:36 INFO Executor: Running task 1.0 in stage 0.0 (TID 1)
+15/08/06 03:29:37 INFO TaskSetManager: Finished task 0.0 in stage 0.0 (TID 0) in 124224 ms on localhost (1/6)
+15/08/06 03:29:37 INFO NewHadoopRDD: Input split: file:/root/genedata/all.y.vcf:33554432+33554432
+15/08/06 03:29:37 INFO CodecPool: Got brand-new compressor [.gz]
+NFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [variantCallingAnnotations, vqslod] FLOAT: 14,850,252 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:29:36 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [variantCallingAnnotations, culprit] BINARY: 14,850,252 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:29:36 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [variantCallingAnnotations, usedForNegativeTrainingSet] BOOLEAN: 14,850,252 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:29:36 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [variantCallingAnnotations, usedForPositiveTrainingSet] BOOLEAN: 14,850,252 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:29:36 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 2,450,794B for [sampleId] BINARY: 14,850,252 values, 20,450,534B raw, 2,443,774B comp, 156 pages, encodings: [BIT_PACKED, RLE, PLAIN_DICTIONARY], dic { 1,233 entries, 13,563B raw, 1,233B comp}
+Aug 6, 2015 3:29:36 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [sampleDescription] BINARY: 14,850,252 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:29:36 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [processingDescription] BINARY: 14,850,252 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:29:36 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 170,585B for [alleles, array] BINARY: 14,850,252 values, 302,790B raw, 167,085B comp, 100 pages, encodings: [RLE, PLAIN_DICTIONARY], dic { 4 entries, 36B raw, 4B comp}
+Aug 6, 2015 3:29:36 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [expectedAlleleDosage] FLOAT: 14,850,252 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:29:36 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [referenceReadDepth] INT32: 14,850,252 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:29:36 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [alternateReadDepth] INT32: 14,850,252 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:29:36 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [readDepth] INT32: 14,850,252 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:29:36 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [minReadDepth] INT32: 14,850,252 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:29:36 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 8,019B for [genotypeQuality] INT32: 14,850,252 values, 18,383B raw, 7,977B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN_DICTIONARY], dic { 96 entries, 384B raw, 96B comp}
+Aug 6, 2015 3:29:36 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 41,248B for [genotypeLikelihoods, array] INT32: 14,877,158 values, 89,081B raw, 41,205B comp, 1 pages, encodings: [RLE, PLAIN_DICTIONARY], dic { 2,763 entries, 11,052B raw, 2,763B comp}
+Aug 6, 2015 3:29:36 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 8,402B for [nonReferenceLikelihoods, array] INT32: 14,850,252 values, 8,672B raw, 8,359B comp, 1 pages, encodings: [RLE, PLAIN_DICTIONARY], dic { 1,588 entries, 6,352B raw, 1,588B comp}
+Aug 6, 2015 3:29:36 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 59B for [strandBiasComponents, array] INT32: 14,850,252 values, 18B raw, 32B comp, 1 pages, encodings: [RLE, PLAIN]
+Aug 6, 2015 3:29:36 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 1,999B for [splitFromMultiAllelic] BOOLEAN: 14,850,252 values, 1,856,301B raw, 1,932B comp, 2 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:29:36 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 1,999B for [isPhased] BOOLEAN: 14,850,252 values, 1,856,301B raw, 1,932B comp, 2 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:29:36 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [phaseSetId] INT32: 14,850,252 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:29:36 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [phaseQuality] INT32: 14,850,252 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:29:37 AM INFO: org.apache.parquet.hadoop.codec.CodecConfig: Compression: GZIP
+Aug 6, 2015 3:29:37 AM INFO: org.apache.parquet.hadoop.ParquetOutputFormat: Parquet block size to 134217728
+Aug 6, 2015 3:29:37 AM INFO: org.apache.parquet.hadoop.ParquetOutputFormat: Parquet page size to 1048576
+Aug 6, 2015 3:29:37 AM INFO: org.apache.parquet.hadoop.ParquetOutputFormat: Parquet dictionary page size to 1048576
+Aug 6, 2015 3:29:37 AM INFO: org.apache.parquet.hadoop.ParquetOutputFormat: Dictionary is on
+Aug 6, 2015 3:29:37 AM INFO: org.apache.parquet.hadoop.ParquetOutputFormat: Validation is off
+Aug 6, 2015 3:29:37 AM INFO: org.apache.parquet.hadoop.ParquetOutputFormat: Writer version is: PARQUET_1_0
+Aug 6, 2015 3:29:37 AM INFO: org.apache.parquet.hadoop.ParquetOutputFormat: Maximum row group padding size is 0 bytes
+Aug 6, 2015 3:31:45 AM INFO: org.apache.parquet.hadoop.InternalParquetRecordWriter: Flushing mem columnStore to file. allocated memory: 10,653,712
+Aug 6, 2015 3:31:45 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 4,307B for [variant, contig, contigName] BINARY: 15,172,065 values, 876B raw, 2,190B comp, 73 pages, encodings: [BIT_PACKED, RLE, PLAIN_DICTIONARY], dic { 1 entries, 5B raw, 1B comp}
+Aug 6, 2015 3:31:45 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [variant, contig, contigLength] INT64: 15,172,065 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:31:45 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [variant, contig, contigMD5] BINARY: 15,172,065 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:31:45 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [variant, contig, referenceURL] BINARY: 15,172,065 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:31:45 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [variant, contig, assembly] BINARY: 15,172,065 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:31:45 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [variant, contig, species] BINARY: 15,172,065 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:31:45 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 28,687B for [variant, start] INT64: 15,172,065 values, 50,448B raw, 23,467B comp, 116 pages, encodings: [BIT_PACKED, RLE, PLAIN_DICTIONARY], dic { 12,290 entries, 98,320B raw, 12,290B comp}
+Aug 6, 2015 3:31:45 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 28,681B for [variant, end] INT64: 15,172,065 values, 50,449B raw, 23,461B comp, 116 pages, encodings: [BIT_PACKED, RLE, PLAIN_DICTIONARY], dic { 12,290 entries, 98,320B raw, 12,290B comp}
+Aug 6, 2015 3:31:45 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 14,558B for [variant, referenceAllele] BINARY: 15,172,065 values, 28,064B raw, 12,206B comp, 73 pages, encodings: [BIT_PACKED, RLE, PLAIN_DICTIONARY], dic { 86 entries, 724B raw, 86B comp}
+Aug 6, 2015 3:31:45 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 14,409B for [variant, alternateAllele] BINARY: 15,172,065 values, 28,441B raw, 12,072B comp, 73 pages, encodings: [BIT_PACKED, RLE, PLAIN_DICTIONARY], dic { 48 entries, 350B raw, 48B comp}
+Aug 6, 2015 3:31:45 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [variant, svAllele, type] BINARY: 15,172,065 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:31:45 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [variant, svAllele, assembly] BINARY: 15,172,065 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:31:45 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [variant, svAllele, precise] BOOLEAN: 15,172,065 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:31:45 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [variant, svAllele, startWindow] INT32: 15,172,065 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:31:45 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [variant, svAllele, endWindow] INT32: 15,172,065 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:31:45 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 3,712B for [variantCallingAnnotations, variantCallErrorProbability] FLOAT: 15,172,065 values, 696B raw, 1,682B comp, 58 pages, encodings: [BIT_PACKED, RLE, PLAIN_DICTIONARY], dic { 1 entries, 4B raw, 1B comp}
+Aug 6, 2015 3:31:45 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 1,997B for [variantCallingAnnotations, variantIsPassing] BOOLEAN: 15,172,065 values, 1,896,527B raw, 1,930B comp, 2 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:31:45 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 60B for [variantCallingAnnotations, variantFilters, array] BINARY: 15,172,065 values, 18B raw, 33B comp, 1 pages, encodings: [RLE, PLAIN]
+Aug 6, 2015 3:31:45 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 33,200B for [variantCallingAnnotations, readDepth] INT32: 15,172,065 values, 49,480B raw, 31,043B comp, 58 pages, encodings: [BIT_PACKED, RLE, PLAIN_DICTIONARY], dic { 3,570 entries, 14,280B raw, 3,570B comp}
+Aug 6, 2015 3:31:45 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [variantCallingAnnotations, downsampled] BOOLEAN: 15,172,065 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:31:45 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [variantCallingAnnotations, baseQRankSum] FLOAT: 15,172,065 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:31:45 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [variantCallingAnnotations, clippingRankSum] FLOAT: 15,172,065 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:31:45 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [variantCallingAnnotations, fisherStrandBiasPValue] FLOAT: 15,172,065 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:31:45 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [variantCallingAnnotations, haplotypeScore] FLOAT: 15,172,065 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:31:45 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [variantCallingAnnotations, inbreedingCoefficient] FLOAT: 15,172,065 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:31:45 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [variantCallingAnnotations, rmsMapQ] FLOAT: 15,172,065 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:31:45 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [variantCallingAnnotations, mapq0Reads] INT32: 15,172,065 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:31:45 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [variantCallingAnnotations, mqRankSum] FLOAT: 15,172,065 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:31:45 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [variantCallingAnnotations, variantQualityByDepth] FLOAT: 15,172,065 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:31:45 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [variantCallingAnnotations, readPositionRankSum] FLOAT: 15,172,065 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:31:45 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [variantCallingAnnotations, vqslod] FLOAT: 15,172,065 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:31:45 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [variantCallingAnnotations, culprit] BINARY: 15,172,065 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:31:45 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [variantCallingAnnotations, usedForNegativeTrainingSet] BOOLEAN: 15,172,065 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:31:45 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [variantCallingAnnotations, usedForPositiveTrainingSet] BOOLEAN: 15,172,065 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:31:45 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 2,512,218B for [sampleId] BINARY: 15,172,065 values, 20,893,709B raw, 2,505,018B comp, 160 pages, encodings: [BIT_PACKED, RLE, PLAIN_DICTIONARY], dic { 1,233 entries, 13,563B raw, 1,233B comp}
+Aug 6, 2015 3:31:45 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [sampleDescription] BINARY: 15,172,065 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:31:45 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [processingDescription] BINARY: 15,172,065 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:31:45 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 177,958B for [alleles, array] BINARY: 15,172,065 values, 312,649B raw, 174,388B comp, 102 pages, encodings: [RLE, PLAIN_DICTIONARY], dic { 4 entries, 36B raw, 4B comp}
+Aug 6, 2015 3:31:45 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [expectedAlleleDosage] FLOAT: 15,172,065 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:31:45 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [referenceReadDepth] INT32: 15,172,065 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:31:45 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [alternateReadDepth] INT32: 15,172,065 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:31:45 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [readDepth] INT32: 15,172,065 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:31:45 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [minReadDepth] INT32: 15,172,065 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:31:45 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 6,714B for [genotypeQuality] INT32: 15,172,065 values, 13,049B raw, 6,672B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN_DICTIONARY], dic { 92 entries, 368B raw, 92B comp}
+Aug 6, 2015 3:31:45 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 35,288B for [genotypeLikelihoods, array] INT32: 15,194,079 values, 73,101B raw, 35,245B comp, 1 pages, encodings: [RLE, PLAIN_DICTIONARY], dic { 2,680 entries, 10,715/08/06 03:31:45 INFO FileOutputCommitter: Saved output of task 'attempt_201508060327_0003_r_000001_0' to file:/root/genedata/all.y.adam/_temporary/0/task_201508060327_0003_r_000001
+15/08/06 03:31:45 INFO Executor: Finished task 1.0 in stage 0.0 (TID 1). 2043 bytes result sent to driver
+15/08/06 03:31:45 INFO TaskSetManager: Starting task 2.0 in stage 0.0 (TID 2, localhost, PROCESS_LOCAL, 4767 bytes)
+15/08/06 03:31:45 INFO Executor: Running task 2.0 in stage 0.0 (TID 2)
+15/08/06 03:31:45 INFO TaskSetManager: Finished task 1.0 in stage 0.0 (TID 1) in 128205 ms on localhost (2/6)
+15/08/06 03:31:45 INFO NewHadoopRDD: Input split: file:/root/genedata/all.y.vcf:67108864+33554432
+15/08/06 03:31:45 INFO CodecPool: Got brand-new compressor [.gz]
+20B raw, 2,680B comp}
+Aug 6, 2015 3:31:45 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 11,949B for [nonReferenceLikelihoods, array] INT32: 15,172,065 values, 12,136B raw, 11,906B comp, 1 pages, encodings: [RLE, PLAIN_DICTIONARY], dic { 1,041 entries, 4,164B raw, 1,041B comp}
+Aug 6, 2015 3:31:45 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 59B for [strandBiasComponents, array] INT32: 15,172,065 values, 18B raw, 32B comp, 1 pages, encodings: [RLE, PLAIN]
+Aug 6, 2015 3:31:45 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 2,058B for [splitFromMultiAllelic] BOOLEAN: 15,172,065 values, 1,896,527B raw, 1,991B comp, 2 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:31:45 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 2,058B for [isPhased] BOOLEAN: 15,172,065 values, 1,896,527B raw, 1,991B comp, 2 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:31:45 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [phaseSetId] INT32: 15,172,065 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:31:45 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [phaseQuality] INT32: 15,172,065 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:31:45 AM INFO: org.apache.parquet.hadoop.codec.CodecConfig: Compression: GZIP
+Aug 6, 2015 3:31:45 AM INFO: org.apache.parquet.hadoop.ParquetOutputFormat: Parquet block size to 134217728
+Aug 6, 2015 3:31:45 AM INFO: org.apache.parquet.hadoop.ParquetOutputFormat: Parquet page size to 1048576
+Aug 6, 2015 3:31:45 AM INFO: org.apache.parquet.hadoop.ParquetOutputFormat: Parquet dictionary page size to 1048576
+Aug 6, 2015 3:31:45 AM INFO: org.apache.parquet.hadoop.ParquetOutputFormat: Dictionary is on
+Aug 6, 2015 3:31:45 AM INFO: org.apache.parquet.hadoop.ParquetOutputFormat: Validation is off
+Aug 6, 2015 3:31:45 AM INFO: org.apache.parquet.hadoop.ParquetOutputFormat: Writer version is: PARQUET_1_0
+Aug 6, 2015 3:31:45 AM INFO: org.apache.parquet.hadoop.ParquetOutputFormat: Maximum row group padding size is 0 bytes
+Aug 6, 2015 3:33:52 AM INFO: org.apache.parquet.hadoop.InternalParquetRecordWriter: Flushing mem columnStore to file. allocated memory: 9,191,366
+Aug 6, 2015 3:33:52 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 4,307B for [variant, contig, contigName] BINARY: 15,290,433 values, 876B raw, 2,190B comp, 73 pages, encodings: [BIT_PACKED, RLE, PLAIN_DICTIONARY], dic { 1 entries, 5B raw, 1B comp}
+Aug 6, 2015 3:33:52 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [variant, contig, contigLength] INT64: 15,290,433 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:33:52 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [variant, contig, contigMD5] BINARY: 15,290,433 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:33:52 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [variant, contig, referenceURL] BINARY: 15,290,433 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:33:52 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [variant, contig, assembly] BINARY: 15,290,433 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:33:52 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [variant, contig, species] BINARY: 15,290,433 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:33:52 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 28,925B for [variant, start] INT64: 15,290,433 values, 50,825B raw, 23,660B comp, 117 pages, encodings: [BIT_PACKED, RLE, PLAIN_DICTIONARY], dic { 12,381 entries, 99,048B raw, 12,381B comp}
+Aug 6, 2015 3:33:52 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 28,925B for [variant, end] INT64: 15,290,433 values, 50,833B raw, 23,660B comp, 117 pages, encodings: [BIT_PACKED, RLE, PLAIN_DICTIONARY], dic { 12,383 entries, 99,064B raw, 12,383B comp}
+Aug 6, 2015 3:33:52 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 14,644B for [variant, referenceAllele] BINARY: 15,290,433 values, 28,249B raw, 12,279B comp, 74 pages, encodings: [BIT_PACKED, RLE, PLAIN_DICTIONARY], dic { 81 entries, 710B raw, 81B comp}
+Aug 6, 2015 3:33:52 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 14,526B for [variant, alternateAllele] BINARY: 15,290,433 values, 28,478B raw, 12,165B comp, 74 pages, encodings: [BIT_PACKED, RLE, PLAIN_DICTIONARY], dic { 49 entries, 385B raw, 49B comp}
+Aug 6, 2015 3:33:52 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [variant, svAllele, type] BINARY: 15,290,433 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:33:52 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [variant, svAllele, assembly] BINARY: 15,290,433 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:33:52 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [variant, svAllele, precise] BOOLEAN: 15,290,433 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:33:52 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [variant, svAllele, startWindow] INT32: 15,290,433 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:33:52 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [variant, svAllele, endWindow] INT32: 15,290,433 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:33:52 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 3,776B for [variantCallingAnnotations, variantCallErrorProbability] FLOAT: 15,290,433 values, 708B raw, 1,711B comp, 59 pages, encodings: [BIT_PACKED, RLE, PLAIN_DICTIONARY], dic { 1 entries, 4B raw, 1B comp}
+Aug 6, 2015 3:33:52 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 2,011B for [variantCallingAnnotations, variantIsPassing] BOOLEAN: 15,290,433 values, 1,911,323B raw, 1,944B comp, 2 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:33:52 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 60B for [variantCallingAnnotations, variantFilters, array] BINARY: 15,290,433 values, 18B raw, 33B comp, 1 pages, encodings: [RLE, PLAIN]
+Aug 6, 2015 3:33:52 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 33,543B for [variantCallingAnnotations, readDepth] INT32: 15,290,433 values, 49,870B raw, 31,351B comp, 59 pages, encodings: [BIT_PACKED, RLE, PLAIN_DICTIONARY], dic { 3,081 entries, 12,324B raw, 3,081B comp}
+Aug 6, 2015 3:33:52 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [variantCallingAnnotations, downsampled] BOOLEAN: 15,290,433 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:33:52 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [variantCallingAnnotations, baseQRankSum] FLOAT: 15,290,433 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:33:52 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [variantCallingAnnotations, clippingRankSum] FLOAT: 15,290,433 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:33:52 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [variantCallingAnnotations, fisherStrandBiasPValue] FLOAT: 15,290,433 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:33:52 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [variantCallingAnnotations, haplotypeScore] FLOAT: 15,290,433 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:33:52 AM INFO: org.apache.parquet.hadoop.ColumnCh15/08/06 03:33:52 INFO FileOutputCommitter: Saved output of task 'attempt_201508060327_0003_r_000002_0' to file:/root/genedata/all.y.adam/_temporary/0/task_201508060327_0003_r_000002
+15/08/06 03:33:52 INFO Executor: Finished task 2.0 in stage 0.0 (TID 2). 2043 bytes result sent to driver
+15/08/06 03:33:52 INFO TaskSetManager: Starting task 3.0 in stage 0.0 (TID 3, localhost, PROCESS_LOCAL, 4767 bytes)
+15/08/06 03:33:52 INFO Executor: Running task 3.0 in stage 0.0 (TID 3)
+15/08/06 03:33:52 INFO TaskSetManager: Finished task 2.0 in stage 0.0 (TID 2) in 127117 ms on localhost (3/6)
+15/08/06 03:33:52 INFO NewHadoopRDD: Input split: file:/root/genedata/all.y.vcf:100663296+33554432
+15/08/06 03:33:52 INFO CodecPool: Got brand-new compressor [.gz]
+unkPageWriteStore: written 56B for [variantCallingAnnotations, inbreedingCoefficient] FLOAT: 15,290,433 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:33:52 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [variantCallingAnnotations, rmsMapQ] FLOAT: 15,290,433 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:33:52 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [variantCallingAnnotations, mapq0Reads] INT32: 15,290,433 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:33:52 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [variantCallingAnnotations, mqRankSum] FLOAT: 15,290,433 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:33:52 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [variantCallingAnnotations, variantQualityByDepth] FLOAT: 15,290,433 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:33:52 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [variantCallingAnnotations, readPositionRankSum] FLOAT: 15,290,433 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:33:52 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [variantCallingAnnotations, vqslod] FLOAT: 15,290,433 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:33:52 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [variantCallingAnnotations, culprit] BINARY: 15,290,433 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:33:52 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [variantCallingAnnotations, usedForNegativeTrainingSet] BOOLEAN: 15,290,433 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:33:52 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [variantCallingAnnotations, usedForPositiveTrainingSet] BOOLEAN: 15,290,433 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:33:52 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 2,528,511B for [sampleId] BINARY: 15,290,433 values, 21,056,720B raw, 2,521,266B comp, 161 pages, encodings: [BIT_PACKED, RLE, PLAIN_DICTIONARY], dic { 1,233 entries, 13,563B raw, 1,233B comp}
+Aug 6, 2015 3:33:52 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [sampleDescription] BINARY: 15,290,433 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:33:52 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [processingDescription] BINARY: 15,290,433 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:33:52 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 175,611B for [alleles, array] BINARY: 15,290,433 values, 310,272B raw, 172,006B comp, 103 pages, encodings: [RLE, PLAIN_DICTIONARY], dic { 4 entries, 36B raw, 4B comp}
+Aug 6, 2015 3:33:52 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [expectedAlleleDosage] FLOAT: 15,290,433 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:33:52 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [referenceReadDepth] INT32: 15,290,433 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:33:52 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [alternateReadDepth] INT32: 15,290,433 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:33:52 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [readDepth] INT32: 15,290,433 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:33:52 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [minReadDepth] INT32: 15,290,433 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:33:52 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 3,677B for [genotypeQuality] INT32: 15,290,433 values, 7,150B raw, 3,636B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN_DICTIONARY], dic { 83 entries, 332B raw, 83B comp}
+Aug 6, 2015 3:33:52 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 27,298B for [genotypeLikelihoods, array] INT32: 15,305,109 values, 45,008B raw, 27,255B comp, 1 pages, encodings: [RLE, PLAIN_DICTIONARY], dic { 1,772 entries, 7,088B raw, 1,772B comp}
+Aug 6, 2015 3:33:52 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 5,190B for [nonReferenceLikelihoods, array] INT32: 15,290,433 values, 5,212B raw, 5,149B comp, 1 pages, encodings: [RLE, PLAIN_DICTIONARY], dic { 1,320 entries, 5,280B raw, 1,320B comp}
+Aug 6, 2015 3:33:52 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 59B for [strandBiasComponents, array] INT32: 15,290,433 values, 18B raw, 32B comp, 1 pages, encodings: [RLE, PLAIN]
+Aug 6, 2015 3:33:52 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 2,040B for [splitFromMultiAllelic] BOOLEAN: 15,290,433 values, 1,911,323B raw, 1,973B comp, 2 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:33:52 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 2,040B for [isPhased] BOOLEAN: 15,290,433 values, 1,911,323B raw, 1,973B comp, 2 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:33:52 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [phaseSetId] INT32: 15,290,433 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:33:52 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [phaseQuality] INT32: 15,290,433 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:33:52 AM INFO: org.apache.parquet.hadoop.codec.CodecConfig: Compression: GZIP
+Aug 6, 2015 3:33:52 AM INFO: org.apache.parquet.hadoop.ParquetOutputFormat: Parquet block size to 134217728
+Aug 6, 2015 3:33:52 AM INFO: org.apache.parquet.hadoop.ParquetOutputFormat: Parquet page size to 1048576
+Aug 6, 2015 3:33:52 AM INFO: org.apache.parquet.hadoop.ParquetOutputFormat: Parquet dictionary page size to 1048576
+Aug 6, 2015 3:33:52 AM INFO: org.apache.parquet.hadoop.ParquetOutputFormat: Dictionary is on
+Aug 6, 2015 3:33:52 AM INFO: org.apache.parquet.hadoop.ParquetOutputFormat: Validation is off
+Aug 6, 2015 3:33:52 AM INFO: org.apache.parquet.hadoop.ParquetOutputFormat: Writer version is: PARQUET_1_0
+Aug 6, 2015 3:33:52 AM INFO: org.apache.parquet.hadoop.ParquetOutputFormat: Maximum row group padding size is 0 bytes
+Aug 6, 2015 3:35:57 AM INFO: org.apache.parquet.hadoop.InternalParquetRecordWriter: Flushing mem columnStore to file. allocated memory: 9,680,770
+Aug 6, 2015 3:35:57 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 4,247B for [variant, contig, contigName] BINARY: 15,057,396 values, 864B raw, 2,159B comp, 72 pages, encodings: [BIT_PACKED, RLE, PLAIN_DICTIONARY], dic { 1 entries, 5B raw, 1B comp}
+Aug 6, 2015 3:35:57 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [variant, contig, contigLength] INT64: 15,057,396 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:35:57 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [variant, contig, contigMD5] BINARY: 15,057,396 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:35:57 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [variant, contig, referenceURL] BINARY: 15,057,396 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:35:57 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [variant, contig, assembly] BINARY: 15,057,396 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:35:57 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [variant, contig, species] BINARY: 15,057,396 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:35:57 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 28,443B for [variant, start] INT64: 15,057,396 values, 50,060B raw, 23,268B comp, 115 pages, encodings: [BIT_PACKED, RLE, PLAIN_DICTIONARY], dic { 12,196 entries, 97,568B raw, 12,196B comp}
+Aug 6, 2015 3:35:57 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 28,436B for [variant, end] INT64: 15,057,396 values, 50,068B raw, 23,261B comp, 115 pages, encodings: [BIT_PACKED, RLE, PLAIN_DICTIONARY], dic { 12,198 entries, 97,584B raw, 12,198B comp}
+Aug 6, 2015 3:35:57 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 14,460B for [variant, referenceAllele] BINARY: 15,057,396 values, 28,057B raw, 12,105B comp, 73 pages, encodings: [BIT_PACKED, RLE, PLAIN_DICTIONARY], dic { 74 entries, 684B raw, 74B comp}
+Aug 6, 2015 3:35:57 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 14,395B for [variant, alternateAllele] BINARY: 15,057,396 values, 28,021B raw, 12,034B comp, 73 pages, encodings: [BIT_PACKED, RLE, PLAIN_DICTIONARY], dic { 40 entries, 317B raw, 40B comp}
+Aug 6, 2015 3:35:57 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [variant, svAllele, type] BINARY: 15,057,396 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:35:57 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [variant, svAllele, assembly] BINARY: 15,057,396 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:35:57 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [variant, svAllele, precise] BOOLEAN: 15,057,396 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:35:57 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [variant, svAllele, startWindow] INT32: 15,057,396 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:35:57 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [variant, svAllele, endWindow] INT32: 15,057,396 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:35:57 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 3,712B for [variantCallingAnnotations, variantCallErrorProbability] FLOAT: 15,057,396 values, 696B raw, 1,682B comp, 58 pages, encodings: [BIT_PACKED, RLE, PLAIN_DICTIONARY], dic { 1 entries, 4B raw, 1B comp}
+Aug 6, 2015 3:35:57 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 1,983B for [variantCallingAnnotations, variantIsPassing] BOOLEAN: 15,057,396 values, 1,882,194B raw, 1,916B comp, 2 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:35:57 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 60B for [variantCallingAnnotations, variantFilters, array] BINARY: 15,057,396 values, 18B raw, 33B comp, 1 pages, encodings: [RLE, PLAIN]
+Aug 6, 2015 3:35:57 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 32,956B for [variantCallingAnnotations, readDepth] INT32: 15,057,396 values, 49,049B raw, 30,796B comp, 58 pages, encodings: [BIT_PACKED, RLE, PLAIN_DICTIONARY], dic { 2,953 entries, 11,812B raw, 2,953B comp}
+Aug 6, 2015 3:35:57 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [variantCallingAnnotations, downsampled] BOOLEAN: 15,057,396 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:35:57 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [variantCallingAnnotations, baseQRankSum] FLOAT: 15,057,396 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:35:57 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [variantCallingAnnotations, clippingRankSum] FLOAT: 15,057,396 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:35:57 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [variantCallingAnnotations, fisherStrandBiasPValue] FLOAT: 15,057,396 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:35:57 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [variantCallingAnnotations, haplotypeScore] FLOAT: 15,057,396 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:35:57 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [variantCallingAnnotations, inbreedingCoefficient] FLOAT: 15,057,396 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:35:57 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [variantCallingAnnotations, rmsMapQ] FLOAT: 15,057,396 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:35:57 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [variantCallingAnnotations, mapq0Reads] INT32: 15,057,396 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:35:57 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [variantCallingAnnotations, mqRankSum] FLOAT: 15,057,396 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:35:57 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [variantCallingAnnotations, variantQualityByDepth] FLOAT: 15,057,396 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:35:57 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [variantCallingAnnotations, readPositionRankSum] FLOAT: 15,057,396 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:35:57 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [variantCallingAnnotations, vqslod] FLOAT: 15,057,396 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:35:57 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [variantCallingAnnotations, culprit] BINARY: 15,057,396 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:35:57 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [variantCallingAnnotations, usedForNegativeTrainingSet] BOOLEAN: 15,057,396 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:35:57 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [variantCallingAnnotations, usedForPositiveTrainingSet] BOOLEAN: 15,057,396 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:35:57 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 2,482,593B for [sampleId] BINARY: 15,057,396 values, 20,735,787B raw, 2,475,483B comp, 158 pages, encodings: [BIT_PACKED, RLE, PLAIN_DICTIONARY], dic { 1,233 entries, 13,563B raw, 1,233B comp}
+Aug 6, 2015 3:35:57 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [sampleDescription] BINARY: 15,057,396 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:35:57 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [processingDescription] BINARY: 15,057,396 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:35:57 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 174,462B for [alleles, array] BINARY: 15,057,396 values, 308,132B raw, 170,927B comp, 101 pages, encodings: [RLE, PLAIN_DICTIONARY], dic { 4 entries, 36B raw, 4B comp}
+Aug 6, 2015 3:35:57 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [expectedAlleleDosage] FLOAT: 15,057,396 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RL15/08/06 03:35:57 INFO FileOutputCommitter: Saved output of task 'attempt_201508060327_0003_r_000003_0' to file:/root/genedata/all.y.adam/_temporary/0/task_201508060327_0003_r_000003
+15/08/06 03:35:57 INFO Executor: Finished task 3.0 in stage 0.0 (TID 3). 2043 bytes result sent to driver
+15/08/06 03:35:57 INFO TaskSetManager: Starting task 4.0 in stage 0.0 (TID 4, localhost, PROCESS_LOCAL, 4767 bytes)
+15/08/06 03:35:57 INFO Executor: Running task 4.0 in stage 0.0 (TID 4)
+15/08/06 03:35:57 INFO TaskSetManager: Finished task 3.0 in stage 0.0 (TID 3) in 125305 ms on localhost (4/6)
+15/08/06 03:35:57 INFO NewHadoopRDD: Input split: file:/root/genedata/all.y.vcf:134217728+33554432
+15/08/06 03:35:57 INFO CodecPool: Got brand-new compressor [.gz]
+E, PLAIN]
+Aug 6, 2015 3:35:57 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [referenceReadDepth] INT32: 15,057,396 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:35:57 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [alternateReadDepth] INT32: 15,057,396 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:35:57 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [readDepth] INT32: 15,057,396 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:35:57 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [minReadDepth] INT32: 15,057,396 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:35:57 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 7,963B for [genotypeQuality] INT32: 15,057,396 values, 12,583B raw, 7,921B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN_DICTIONARY], dic { 98 entries, 392B raw, 98B comp}
+Aug 6, 2015 3:35:57 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 34,343B for [genotypeLikelihoods, array] INT32: 15,076,964 values, 64,829B raw, 34,300B comp, 1 pages, encodings: [RLE, PLAIN_DICTIONARY], dic { 2,187 entries, 8,748B raw, 2,187B comp}
+Aug 6, 2015 3:35:57 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 2,467B for [nonReferenceLikelihoods, array] INT32: 15,057,396 values, 2,564B raw, 2,426B comp, 1 pages, encodings: [RLE, PLAIN_DICTIONARY], dic { 244 entries, 976B raw, 244B comp}
+Aug 6, 2015 3:35:57 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 59B for [strandBiasComponents, array] INT32: 15,057,396 values, 18B raw, 32B comp, 1 pages, encodings: [RLE, PLAIN]
+Aug 6, 2015 3:35:57 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 2,019B for [splitFromMultiAllelic] BOOLEAN: 15,057,396 values, 1,882,194B raw, 1,952B comp, 2 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:35:57 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 2,019B for [isPhased] BOOLEAN: 15,057,396 values, 1,882,194B raw, 1,952B comp, 2 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:35:57 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [phaseSetId] INT32: 15,057,396 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:35:57 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [phaseQuality] INT32: 15,057,396 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:35:57 AM INFO: org.apache.parquet.hadoop.codec.CodecConfig: Compression: GZIP
+Aug 6, 2015 3:35:57 AM INFO: org.apache.parquet.hadoop.ParquetOutputFormat: Parquet block size to 134217728
+Aug 6, 2015 3:35:57 AM INFO: org.apache.parquet.hadoop.ParquetOutputFormat: Parquet page size to 1048576
+Aug 6, 2015 3:35:57 AM INFO: org.apache.parquet.hadoop.ParquetOutputFormat: Parquet dictionary page size to 1048576
+Aug 6, 2015 3:35:57 AM INFO: org.apache.parquet.hadoop.ParquetOutputFormat: Dictionary is on
+Aug 6, 2015 3:35:57 AM INFO: org.apache.parquet.hadoop.ParquetOutputFormat: Validation is off
+Aug 6, 2015 3:35:57 AM INFO: org.apache.parquet.hadoop.ParquetOutputFormat: Writer version is: PARQUET_1_0
+Aug 6, 2015 3:35:57 AM INFO: org.apache.parquet.hadoop.ParquetOutputFormat: Maximum row group padding size is 0 bytes
+Aug 6, 2015 3:37:59 AM INFO: org.apache.parquet.hadoop.InternalParquetRecordWriter: Flushing mem columnStore to file. allocated memory: 8,448,447
+Aug 6, 2015 3:37:59 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 4,189B for [variant, contig, contigName] BINARY: 14,694,894 values, 852B raw, 2,130B comp, 71 pages, encodings: [BIT_PACKED, RLE, PLAIN_DICTIONARY], dic { 1 entries, 5B raw, 1B comp}
+Aug 6, 2015 3:37:59 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [variant, contig, contigLength] INT64: 14,694,894 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:37:59 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [variant, contig, contigMD5] BINARY: 14,694,894 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:37:59 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [variant, contig, referenceURL] BINARY: 14,694,894 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:37:59 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [variant, contig, assembly] BINARY: 14,694,894 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:37:59 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [variant, contig, species] BINARY: 14,694,894 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:37:59 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 27,835B for [variant, start] INT64: 14,694,894 values, 48,790B raw, 22,752B comp, 113 pages, encodings: [BIT_PACKED, RLE, PLAIN_DICTIONARY], dic { 11,885 entries, 95,080B raw, 11,885B comp}
+Aug 6, 2015 3:37:59 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 27,842B for [variant, end] INT64: 14,694,894 values, 48,790B raw, 22,759B comp, 113 pages, encodings: [BIT_PACKED, RLE, PLAIN_DICTIONARY], dic { 11,884 entries, 95,072B raw, 11,884B comp}
+Aug 6, 2015 3:37:59 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 13,980B for [variant, referenceAllele] BINARY: 14,694,894 values, 27,438B raw, 11,670B comp, 71 pages, encodings: [BIT_PACKED, RLE, PLAIN_DICTIONARY], dic { 70 entries, 614B raw, 70B comp}
+Aug 6, 2015 3:37:59 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 13,980B for [variant, alternateAllele] BINARY: 14,694,894 values, 27,390B raw, 11,690B comp, 71 pages, encodings: [BIT_PACKED, RLE, PLAIN_DICTIONARY], dic { 41 entries, 316B raw, 41B comp}
+Aug 6, 2015 3:37:59 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [variant, svAllele, type] BINARY: 14,694,894 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:37:59 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [variant, svAllele, assembly] BINARY: 14,694,894 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:37:59 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [variant, svAllele, precise] BOOLEAN: 14,694,894 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:37:59 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [variant, svAllele, startWindow] INT32: 14,694,894 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:37:59 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [variant, svAllele, endWindow] INT32: 14,694,894 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:37:59 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 3,649B for [variantCallingAnnotations, variantCallErrorProbability] FLOAT: 14,694,894 values, 684B raw, 1,654B comp, 57 pages, encodings: [BIT_PACKED, RLE, PLAIN_DICTIONARY], dic { 1 entries, 4B raw, 1B comp}
+Aug 6, 2015 3:37:59 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 1,941B for [variantCallingAnnotations, variantIsPassing] BOOLEAN: 14,694,894 values, 1,836,881B raw, 1,874B comp, 2 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:37:59 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 60B for [variantCallingAnnotations, variantFilters, array] BINARY: 14,694,894 values, 18B raw, 33B comp, 1 pages, encodings: [RLE, PLAIN]
+Aug 6, 2015 3:37:59 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 32,099B for [variantCallingAnnotations, readDepth] INT32: 14,694,894 values, 47,870B raw, 30,01215/08/06 03:37:59 INFO FileOutputCommitter: Saved output of task 'attempt_201508060327_0003_r_000004_0' to file:/root/genedata/all.y.adam/_temporary/0/task_201508060327_0003_r_000004
+15/08/06 03:37:59 INFO Executor: Finished task 4.0 in stage 0.0 (TID 4). 2043 bytes result sent to driver
+15/08/06 03:37:59 INFO TaskSetManager: Starting task 5.0 in stage 0.0 (TID 5, localhost, PROCESS_LOCAL, 4767 bytes)
+15/08/06 03:37:59 INFO Executor: Running task 5.0 in stage 0.0 (TID 5)
+15/08/06 03:37:59 INFO TaskSetManager: Finished task 4.0 in stage 0.0 (TID 4) in 121689 ms on localhost (5/6)
+15/08/06 03:37:59 INFO NewHadoopRDD: Input split: file:/root/genedata/all.y.vcf:167772160+3889374
+B comp, 56 pages, encodings: [BIT_PACKED, RLE, PLAIN_DICTIONARY], dic { 3,371 entries, 13,484B raw, 3,371B comp}
+Aug 6, 2015 3:37:59 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [variantCallingAnnotations, downsampled] BOOLEAN: 14,694,894 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:37:59 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [variantCallingAnnotations, baseQRankSum] FLOAT: 14,694,894 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:37:59 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [variantCallingAnnotations, clippingRankSum] FLOAT: 14,694,894 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:37:59 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [variantCallingAnnotations, fisherStrandBiasPValue] FLOAT: 14,694,894 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:37:59 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [variantCallingAnnotations, haplotypeScore] FLOAT: 14,694,894 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:37:59 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [variantCallingAnnotations, inbreedingCoefficient] FLOAT: 14,694,894 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:37:59 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [variantCallingAnnotations, rmsMapQ] FLOAT: 14,694,894 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:37:59 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [variantCallingAnnotations, mapq0Reads] INT32: 14,694,894 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:37:59 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [variantCallingAnnotations, mqRankSum] FLOAT: 14,694,894 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:37:59 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [variantCallingAnnotations, variantQualityByDepth] FLOAT: 14,694,894 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:37:59 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [variantCallingAnnotations, readPositionRankSum] FLOAT: 14,694,894 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:37:59 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [variantCallingAnnotations, vqslod] FLOAT: 14,694,894 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:37:59 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [variantCallingAnnotations, culprit] BINARY: 14,694,894 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:37:59 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [variantCallingAnnotations, usedForNegativeTrainingSet] BOOLEAN: 14,694,894 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:37:59 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [variantCallingAnnotations, usedForPositiveTrainingSet] BOOLEAN: 14,694,894 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:37:59 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 2,433,643B for [sampleId] BINARY: 14,694,894 values, 20,236,596B raw, 2,426,668B comp, 155 pages, encodings: [BIT_PACKED, RLE, PLAIN_DICTIONARY], dic { 1,233 entries, 13,563B raw, 1,233B comp}
+Aug 6, 2015 3:37:59 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [sampleDescription] BINARY: 14,694,894 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:37:59 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [processingDescription] BINARY: 14,694,894 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:37:59 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 161,329B for [alleles, array] BINARY: 14,694,894 values, 289,712B raw, 157,864B comp, 99 pages, encodings: [RLE, PLAIN_DICTIONARY], dic { 4 entries, 36B raw, 4B comp}
+Aug 6, 2015 3:37:59 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [expectedAlleleDosage] FLOAT: 14,694,894 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:37:59 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [referenceReadDepth] INT32: 14,694,894 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:37:59 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [alternateReadDepth] INT32: 14,694,894 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:37:59 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [readDepth] INT32: 14,694,894 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:37:59 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [minReadDepth] INT32: 14,694,894 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:37:59 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 6,241B for [genotypeQuality] INT32: 14,694,894 values, 19,232B raw, 6,199B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN_DICTIONARY], dic { 93 entries, 372B raw, 93B comp}
+Aug 6, 2015 3:37:59 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 46,336B for [genotypeLikelihoods, array] INT32: 14,721,800 values, 89,497B raw, 46,293B comp, 1 pages, encodings: [RLE, PLAIN_DICTIONARY], dic { 3,123 entries, 12,492B raw, 3,123B comp}
+Aug 6, 2015 3:37:59 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 18,411B for [nonReferenceLikelihoods, array] INT32: 14,694,894 values, 19,042B raw, 18,368B comp, 1 pages, encodings: [RLE, PLAIN_DICTIONARY], dic { 1,067 entries, 4,268B raw, 1,067B comp}
+Aug 6, 2015 3:37:59 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 59B for [strandBiasComponents, array] INT32: 14,694,894 values, 18B raw, 32B comp, 1 pages, encodings: [RLE, PLAIN]
+Aug 6, 2015 3:37:59 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 2,037B for [splitFromMultiAllelic] BOOLEAN: 14,694,894 values, 1,836,881B raw, 1,970B comp, 2 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:37:59 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 2,037B for [isPhased] BOOLEAN: 14,694,894 values, 1,836,881B raw, 1,970B comp, 2 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:37:59 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [phaseSetId] INT32: 14,694,894 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:37:59 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [phaseQuality] INT32: 14,694,894 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:37:59 AM INFO: org.apache.parquet.hadoop.codec.CodecConfig: Compression: GZIP
+Aug 6, 2015 3:37:59 AM INFO: org.apache.parquet.hadoop.ParquetOutputFormat: Parquet block size to 134217728
+Aug 6, 2015 3:37:59 AM INFO: org.apache.parquet.hadoop.ParquetOutputFormat: Parquet page size to 1048576
+Aug 6, 2015 3:37:59 AM INFO: org.apache.parquet.hadoop.ParquetOutputFormat: Parquet dictionary page size to 1048576
+Aug 6, 2015 3:37:59 AM INFO: org.apache.parquet.hadoop.ParquetOutputFormat: Dictionary is on
+Aug 6, 2015 3:37:59 AM INFO: org.apache.parquet.hadoop.ParquetOutputFormat: Validation is off
+Aug 6, 2015 3:37:59 AM INFO: org.apache.parquet.hadoop.ParquetOutputFormat: Writer version is: PARQUET_1_0
+Aug 6, 2015 3:37:5915/08/06 03:37:59 INFO CodecPool: Got brand-new compressor [.gz]
+ AM INFO: org.apache.parquet.hadoop.ParquetOutputFormat: Maximum row group padding size is 0 bytes
+Aug 6, 2015 3:38:11 AM INFO: org.apache.parquet.hadoop.InternalParquetRecordWriter: Flushing mem columnStore to file. allocated memory: 4,346,950
+Aug 6, 2015 3:38:11 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 472B for [variant, contig, contigName] BINARY: 1,506,726 values, 96B raw, 240B comp, 8 pages, encodings: [BIT_PACKED, RLE, PLAIN_DICTIONARY], dic { 1 entries, 5B raw, 1B comp}
+Aug 6, 2015 3:38:11 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [variant, contig, contigLength] INT64: 1,506,726 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:38:11 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [variant, contig, contigMD5] BINARY: 1,506,726 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:38:11 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [variant, contig, referenceURL] BINARY: 1,506,726 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:38:11 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [variant, contig, assembly] BINARY: 1,506,726 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:38:11 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [variant, contig, species] BINARY: 1,506,726 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:38:11 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 2,933B for [variant, start] INT64: 1,506,726 values, 4,801B raw, 2,393B comp, 12 pages, encodings: [BIT_PACKED, RLE, PLAIN_DICTIONARY], dic { 1,215 entries, 9,720B raw, 1,215B comp}
+Aug 6, 2015 3:38:11 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 2,933B for [variant, end] INT64: 1,506,726 values, 4,801B raw, 2,393B comp, 12 pages, encodings: [BIT_PACKED, RLE, PLAIN_DICTIONARY], dic { 1,215 entries, 9,720B raw, 1,215B comp}
+Aug 6, 2015 3:38:11 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 1,501B for [variant, referenceAllele] BINARY: 1,506,726 values, 2,838B raw, 1,245B comp, 8 pages, encodings: [BIT_PACKED, RLE, PLAIN_DICTIONARY], dic { 21 entries, 140B raw, 21B comp}
+Aug 6, 2015 3:38:11 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 1,523B for [variant, alternateAllele] BINARY: 1,506,726 values, 2,825B raw, 1,243B comp, 8 pages, encodings: [BIT_PACKED, RLE, PLAIN_DICTIONARY], dic { 14 entries, 96B raw, 14B comp}
+Aug 6, 2015 3:38:11 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [variant, svAllele, type] BINARY: 1,506,726 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:38:11 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [variant, svAllele, assembly] BINARY: 1,506,726 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:38:11 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [variant, svAllele, precise] BOOLEAN: 1,506,726 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:38:11 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [variant, svAllele, startWindow] INT32: 1,506,726 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:38:11 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [variant, svAllele, endWindow] INT32: 1,506,726 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:38:11 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 385B for [variantCallingAnnotations, variantCallErrorProbability] FLOAT: 1,506,726 values, 72B raw, 175B comp, 6 pages, encodings: [BIT_PACKED, RLE, PLAIN_DICTIONARY], dic { 1 entries, 4B raw, 1B comp}
+Aug 6, 2015 3:38:11 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 262B for [variantCallingAnnotations, variantIsPassing] BOOLEAN: 1,506,726 values, 188,350B raw, 229B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:38:11 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 60B for [variantCallingAnnotations, variantFilters, array] BINARY: 1,506,726 values, 18B raw, 33B comp, 1 pages, encodings: [RLE, PLAIN]
+Aug 6, 2015 3:38:11 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 2,749B for [variantCallingAnnotations, readDepth] INT32: 1,506,726 values, 4,710B raw, 2,522B comp, 6 pages, encodings: [BIT_PACKED, RLE, PLAIN_DICTIONARY], dic { 999 entries, 3,996B raw, 999B comp}
+Aug 6, 2015 3:38:11 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [variantCallingAnnotations, downsampled] BOOLEAN: 1,506,726 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:38:11 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [variantCallingAnnotations, baseQRankSum] FLOAT: 1,506,726 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:38:11 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [variantCallingAnnotations, clippingRankSum] FLOAT: 1,506,726 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:38:11 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [variantCallingAnnotations, fisherStrandBiasPValue] FLOAT: 1,506,726 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:38:11 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [variantCallingAnnotations, haplotypeScore] FLOAT: 1,506,726 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:38:11 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [variantCallingAnnotations, inbreedingCoefficient] FLOAT: 1,506,726 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:38:11 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [variantCallingAnnotations, rmsMapQ] FLOAT: 1,506,726 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:38:11 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [variantCallingAnnotations, mapq0Reads] INT32: 1,506,726 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:38:11 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [variantCallingAnnotations, mqRankSum] FLOAT: 1,506,726 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:38:11 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [variantCallingAnnotations, variantQualityByDepth] FLOAT: 1,506,726 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:38:11 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [variantCallingAnnotations, readPositionRankSum] FLOAT: 1,506,726 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:38:11 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [variantCallingAnnotations, vqslod] FLOAT: 1,506,726 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:38:11 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [variantCallingAnnotations, culprit] BINARY: 1,506,726 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:38:11 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [variantCallingAnnotations, usedForNegativeTrainingSet] BOOLEAN: 1,506,726 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:38:11 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [variantCallingAnnotations, usedForPositiveTrainin15/08/06 03:38:11 INFO FileOutputCommitter: Saved output of task 'attempt_201508060327_0003_r_000005_0' to file:/root/genedata/all.y.adam/_temporary/0/task_201508060327_0003_r_000005
+15/08/06 03:38:11 INFO Executor: Finished task 5.0 in stage 0.0 (TID 5). 2043 bytes result sent to driver
+15/08/06 03:38:11 INFO TaskSetManager: Finished task 5.0 in stage 0.0 (TID 5) in 11978 ms on localhost (6/6)
+15/08/06 03:38:11 INFO DAGScheduler: ResultStage 0 (saveAsNewAPIHadoopFile at ADAMRDDFunctions.scala:75) finished in 638.393 s
+15/08/06 03:38:11 INFO TaskSchedulerImpl: Removed TaskSet 0.0, whose tasks have all completed, from pool 
+15/08/06 03:38:11 INFO DAGScheduler: Job 0 finished: saveAsNewAPIHadoopFile at ADAMRDDFunctions.scala:75, took 638.590613 s
+15/08/06 03:38:11 INFO Vcf2ADAM: Overall Duration: 10 mins 43 secs
+15/08/06 03:38:11 INFO SparkContext: Invoking stop() from shutdown hook
+gSet] BOOLEAN: 1,506,726 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:38:11 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 250,997B for [sampleId] BINARY: 1,506,726 values, 2,074,942B raw, 250,277B comp, 16 pages, encodings: [BIT_PACKED, RLE, PLAIN_DICTIONARY], dic { 1,233 entries, 13,563B raw, 1,233B comp}
+Aug 6, 2015 3:38:11 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [sampleDescription] BINARY: 1,506,726 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:38:11 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [processingDescription] BINARY: 1,506,726 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:38:11 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 20,782B for [alleles, array] BINARY: 1,506,726 values, 35,997B raw, 20,397B comp, 11 pages, encodings: [RLE, PLAIN_DICTIONARY], dic { 4 entries, 36B raw, 4B comp}
+Aug 6, 2015 3:38:11 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [expectedAlleleDosage] FLOAT: 1,506,726 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:38:11 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [referenceReadDepth] INT32: 1,506,726 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:38:11 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [alternateReadDepth] INT32: 1,506,726 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:38:11 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [readDepth] INT32: 1,506,726 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:38:11 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [minReadDepth] INT32: 1,506,726 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:38:11 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 3,031B for [genotypeQuality] INT32: 1,506,726 values, 9,036B raw, 2,989B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN_DICTIONARY], dic { 75 entries, 300B raw, 75B comp}
+Aug 6, 2015 3:38:11 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 16,857B for [genotypeLikelihoods, array] INT32: 1,516,510 values, 32,678B raw, 16,814B comp, 1 pages, encodings: [RLE, PLAIN_DICTIONARY], dic { 2,488 entries, 9,952B raw, 2,488B comp}
+Aug 6, 2015 3:38:11 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 10,533B for [nonReferenceLikelihoods, array] INT32: 1,506,726 values, 11,058B raw, 10,490B comp, 1 pages, encodings: [RLE, PLAIN_DICTIONARY], dic { 821 entries, 3,284B raw, 821B comp}
+Aug 6, 2015 3:38:11 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 59B for [strandBiasComponents, array] INT32: 1,506,726 values, 18B raw, 32B comp, 1 pages, encodings: [RLE, PLAIN]
+Aug 6, 2015 3:38:11 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 312B for [splitFromMultiAllelic] BOOLEAN: 1,506,726 values, 188,350B raw, 279B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:38:11 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 312B for [isPhased] BOOLEAN: 1,506,726 values, 188,350B raw, 279B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:38:11 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [phaseSetId] INT32: 1,506,726 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:38:11 AM INFO: org.apache.parquet.hadoop.ColumnChunkPageWriteStore: written 56B for [phaseQuality] INT32: 1,506,726 values, 9B raw, 29B comp, 1 pages, encodings: [BIT_PACKED, RLE, PLAIN]
+Aug 6, 2015 3:38:11 AM INFO: org.apache.parquet.hadoop.ParquetFileReader: Initiating action with parallelism: 5
+15/08/06 03:38:11 INFO ContextHandler: stopped o.s.j.s.ServletContextHandler{/metrics/json,null}
+15/08/06 03:38:11 INFO ContextHandler: stopped o.s.j.s.ServletContextHandler{/stages/stage/kill,null}
+15/08/06 03:38:11 INFO ContextHandler: stopped o.s.j.s.ServletContextHandler{/api,null}
+15/08/06 03:38:11 INFO ContextHandler: stopped o.s.j.s.ServletContextHandler{/,null}
+15/08/06 03:38:11 INFO ContextHandler: stopped o.s.j.s.ServletContextHandler{/static,null}
+15/08/06 03:38:11 INFO ContextHandler: stopped o.s.j.s.ServletContextHandler{/executors/threadDump/json,null}
+15/08/06 03:38:11 INFO ContextHandler: stopped o.s.j.s.ServletContextHandler{/executors/threadDump,null}
+15/08/06 03:38:11 INFO ContextHandler: stopped o.s.j.s.ServletContextHandler{/executors/json,null}
+15/08/06 03:38:11 INFO ContextHandler: stopped o.s.j.s.ServletContextHandler{/executors,null}
+15/08/06 03:38:11 INFO ContextHandler: stopped o.s.j.s.ServletContextHandler{/environment/json,null}
+15/08/06 03:38:11 INFO ContextHandler: stopped o.s.j.s.ServletContextHandler{/environment,null}
+15/08/06 03:38:11 INFO ContextHandler: stopped o.s.j.s.ServletContextHandler{/storage/rdd/json,null}
+15/08/06 03:38:11 INFO ContextHandler: stopped o.s.j.s.ServletContextHandler{/storage/rdd,null}
+15/08/06 03:38:11 INFO ContextHandler: stopped o.s.j.s.ServletContextHandler{/storage/json,null}
+15/08/06 03:38:11 INFO ContextHandler: stopped o.s.j.s.ServletContextHandler{/storage,null}
+15/08/06 03:38:11 INFO ContextHandler: stopped o.s.j.s.ServletContextHandler{/stages/pool/json,null}
+15/08/06 03:38:11 INFO ContextHandler: stopped o.s.j.s.ServletContextHandler{/stages/pool,null}
+15/08/06 03:38:11 INFO ContextHandler: stopped o.s.j.s.ServletContextHandler{/stages/stage/json,null}
+15/08/06 03:38:11 INFO ContextHandler: stopped o.s.j.s.ServletContextHandler{/stages/stage,null}
+15/08/06 03:38:11 INFO ContextHandler: stopped o.s.j.s.ServletContextHandler{/stages/json,null}
+15/08/06 03:38:11 INFO ContextHandler: stopped o.s.j.s.ServletContextHandler{/stages,null}
+15/08/06 03:38:11 INFO ContextHandler: stopped o.s.j.s.ServletContextHandler{/jobs/job/json,null}
+15/08/06 03:38:11 INFO ContextHandler: stopped o.s.j.s.ServletContextHandler{/jobs/job,null}
+15/08/06 03:38:11 INFO ContextHandler: stopped o.s.j.s.ServletContextHandler{/jobs/json,null}
+15/08/06 03:38:11 INFO ContextHandler: stopped o.s.j.s.ServletContextHandler{/jobs,null}
+15/08/06 03:38:11 INFO SparkUI: Stopped Spark web UI at http://10.55.119.69:4040
+15/08/06 03:38:11 INFO DAGScheduler: Stopping DAGScheduler
+15/08/06 03:38:11 INFO MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
+15/08/06 03:38:11 INFO Utils: path = /tmp/spark-3a5deff5-10d9-47cd-9b10-8f24264c79d5/blockmgr-3856bfc7-3895-49ff-9993-bdc29d700d06, already present as root for deletion.
+15/08/06 03:38:11 INFO MemoryStore: MemoryStore cleared
+15/08/06 03:38:11 INFO BlockManager: BlockManager stopped
+15/08/06 03:38:11 INFO BlockManagerMaster: BlockManagerMaster stopped
+15/08/06 03:38:11 INFO OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+15/08/06 03:38:11 INFO SparkContext: Successfully stopped SparkContext
+15/08/06 03:38:11 INFO Utils: Shutdown hook called
+15/08/06 03:38:11 INFO Utils: Deleting directory /tmp/spark-3a5deff5-10d9-47cd-9b10-8f24264c79d5

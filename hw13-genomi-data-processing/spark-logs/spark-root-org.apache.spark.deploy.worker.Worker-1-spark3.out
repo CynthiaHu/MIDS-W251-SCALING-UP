@@ -1,0 +1,19 @@
+Spark Command: /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.51-1.b16.el7_1.x86_64/jre/bin/java -cp /usr/local/spark/sbin/../conf/:/usr/local/spark/lib/spark-assembly-1.4.1-hadoop2.6.0.jar:/usr/local/spark/lib/datanucleus-rdbms-3.2.9.jar:/usr/local/spark/lib/datanucleus-core-3.2.10.jar:/usr/local/spark/lib/datanucleus-api-jdo-3.2.6.jar -Xms512m -Xmx512m org.apache.spark.deploy.worker.Worker --webui-port 8081 spark://spark1:7077
+========================================
+Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+15/08/06 03:26:16 INFO Worker: Registered signal handlers for [TERM, HUP, INT]
+15/08/06 03:26:16 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+15/08/06 03:26:16 INFO SecurityManager: Changing view acls to: root
+15/08/06 03:26:16 INFO SecurityManager: Changing modify acls to: root
+15/08/06 03:26:16 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: Set(root); users with modify permissions: Set(root)
+15/08/06 03:26:17 INFO Slf4jLogger: Slf4jLogger started
+15/08/06 03:26:17 INFO Remoting: Starting remoting
+15/08/06 03:26:17 INFO Remoting: Remoting started; listening on addresses :[akka.tcp://sparkWorker@10.90.17.139:44450]
+15/08/06 03:26:17 INFO Utils: Successfully started service 'sparkWorker' on port 44450.
+15/08/06 03:26:17 INFO Worker: Starting Spark worker 10.90.17.139:44450 with 2 cores, 6.4 GB RAM
+15/08/06 03:26:17 INFO Worker: Running Spark version 1.4.1
+15/08/06 03:26:17 INFO Worker: Spark home: /usr/local/spark
+15/08/06 03:26:17 INFO Utils: Successfully started service 'WorkerUI' on port 8081.
+15/08/06 03:26:17 INFO WorkerWebUI: Started WorkerWebUI at http://10.90.17.139:8081
+15/08/06 03:26:17 INFO Worker: Connecting to master akka.tcp://sparkMaster@spark1:7077/user/Master...
+15/08/06 03:26:18 INFO Worker: Successfully registered with master spark://spark1:7077

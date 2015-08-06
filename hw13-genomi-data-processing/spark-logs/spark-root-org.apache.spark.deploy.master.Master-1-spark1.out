@@ -1,0 +1,26 @@
+Spark Command: /opt/jdk1.8.0_45/bin/java -cp /usr/local/spark/sbin/../conf/:/usr/local/spark/lib/spark-assembly-1.4.1-hadoop2.6.0.jar:/usr/local/spark/lib/datanucleus-rdbms-3.2.9.jar:/usr/local/spark/lib/datanucleus-core-3.2.10.jar:/usr/local/spark/lib/datanucleus-api-jdo-3.2.6.jar -Xms512m -Xmx512m org.apache.spark.deploy.master.Master --ip spark1 --port 7077 --webui-port 8080
+========================================
+15/08/06 03:24:54 INFO Master: Registered signal handlers for [TERM, HUP, INT]
+15/08/06 03:24:54 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+15/08/06 03:24:55 INFO SecurityManager: Changing view acls to: root
+15/08/06 03:24:55 INFO SecurityManager: Changing modify acls to: root
+15/08/06 03:24:55 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: Set(root); users with modify permissions: Set(root)
+15/08/06 03:24:56 INFO Slf4jLogger: Slf4jLogger started
+15/08/06 03:24:56 INFO Remoting: Starting remoting
+15/08/06 03:24:56 INFO Utils: Successfully started service 'sparkMaster' on port 7077.
+15/08/06 03:24:56 INFO Remoting: Remoting started; listening on addresses :[akka.tcp://sparkMaster@spark1:7077]
+15/08/06 03:24:57 INFO Server: jetty-8.y.z-SNAPSHOT
+15/08/06 03:24:57 INFO AbstractConnector: Started SelectChannelConnector@spark1:6066
+15/08/06 03:24:57 INFO Utils: Successfully started service on port 6066.
+15/08/06 03:24:57 INFO StandaloneRestServer: Started REST server for submitting applications on port 6066
+15/08/06 03:24:57 INFO Master: Starting Spark master at spark://spark1:7077
+15/08/06 03:24:57 INFO Master: Running Spark version 1.4.1
+15/08/06 03:24:57 INFO Server: jetty-8.y.z-SNAPSHOT
+15/08/06 03:24:57 INFO AbstractConnector: Started SelectChannelConnector@0.0.0.0:8080
+15/08/06 03:24:57 INFO Utils: Successfully started service 'MasterUI' on port 8080.
+15/08/06 03:24:57 INFO MasterWebUI: Started MasterWebUI at http://10.55.119.69:8080
+15/08/06 03:24:57 INFO Master: I have been elected leader! New state: ALIVE
+15/08/06 03:24:57 INFO Master: Registering worker 198.23.88.22:53224 with 2 cores, 6.4 GB RAM
+15/08/06 03:24:58 INFO Master: Registering worker 10.90.17.139:44450 with 2 cores, 6.4 GB RAM
+15/08/06 03:24:58 INFO Master: Registering worker 10.55.119.89:55853 with 2 cores, 6.4 GB RAM
+15/08/06 03:24:59 INFO Master: Registering worker 10.55.119.69:45655 with 2 cores, 6.4 GB RAM
